@@ -1,0 +1,118 @@
+[
+  {
+    "id": "l-window",
+    "title": "White window box",
+    "group": "Window boxes",
+    "image": "white-window-3d-1.png",
+    "size": "Multiple sizes available",
+    "material": "Duplex paper / paperboard",
+    "finish": "White, with window",
+    "description": "Let your cakes take centre stage with white window boxes in a choice of sizes. Clear windows offer a view of your creation, while the simple white finish suits everyday bakery orders and celebrations.",
+    "specifications": [
+      [
+        "Options",
+        "Standard window / L-window"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces"
+      ],
+      [
+        "Material",
+        "Duplex paper / paperboard"
+      ],
+      [
+        "Dimensions (L x W x H) (in Inches)",
+        "L-window: 8 x 8 x 5\nStandard window: 10 x 10 x 5"
+      ],
+      [
+        "Other Sizes",
+        "10 x 10 x 8 / 8 x 8 x 8 / 12 x 12 x 7"
+      ],
+      [
+        "Shape",
+        "Square"
+      ],
+      [
+        "Features",
+        "Transparent window"
+      ],
+      [
+        "Design",
+        "White, non-printed; custom branding available on selected options"
+      ],
+      [
+        "Paper GSM",
+        "300 - 400 GSM"
+      ],
+      [
+        "Box Style",
+        "Foldable paperboard box"
+      ],
+      [
+        "Capacity",
+        "0.5 kg - 2 kg"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "gsm": "300 / 350 / 400 GSM"
+  },
+  {
+    "id": "multi-colour-window",
+    "title": "Multi colour window box",
+    "group": "Window boxes",
+    "image": "multi-window-3d-1.png",
+    "size": "Multiple sizes available",
+    "material": "Paperboard (SBS / food grade)",
+    "finish": "Multicolour / custom printed, with window",
+    "description": "Showcase your cakes in colourful window boxes, from solid shades to floral and patterned designs. Choose a standard top window or an L-window, with custom printing available to suit your brand.",
+    "specifications": [
+      [
+        "Options",
+        "Standard window / L-window"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces"
+      ],
+      [
+        "Material",
+        "Paperboard (SBS / food grade)"
+      ],
+      [
+        "Dimensions (L x W x H) (in Inches)",
+        "8 x 8 x 5 / 10 x 10 x 5"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Square"
+      ],
+      [
+        "Features",
+        "Transparent window"
+      ],
+      [
+        "Design",
+        "Solid colours / Floral prints / Patterns / Custom branding"
+      ],
+      [
+        "Paper GSM",
+        "250 - 300 GSM"
+      ],
+      [
+        "Box Style",
+        "One-piece, foldable"
+      ],
+      [
+        "Capacity",
+        "0.5 kg - 2 kg"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "gsm": "250 / 300 GSM"
+  }
+]

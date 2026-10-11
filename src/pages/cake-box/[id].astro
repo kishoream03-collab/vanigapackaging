@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/Icon.astro';
+import ProductCarousel from '../../components/ProductCarousel.astro';
+import cakes from '../../data/cakes';
+import galleries from '../../data/cake-galleries.json';
+import '../../styles/cakes.css';
+export function getStaticPaths() { return cakes.map(cake => ({ params: {id: cake.id}, props: {cake} })); }
+const {cake} = Astro.props;
+const specs = cake.specifications;
+const gallery = galleries[cake.id as keyof typeof galleries] ?? [];
+const quote = `/?cake=${encodeURIComponent(cake.id)}#quote`;
+const related = cakes.filter(p => p.id !== cake.id).sort((a, b) => Number(b.group === cake.group) - Number(a.group === cake.group)).slice(0, 3);
+---
+<Base title={`${cake.title} | Vaniga Packaging`} description={`${cake.title} from Vaniga Packaging, Chennai, India. View specifications and request a quote for your quantity and branding.`}>
+  <Header /><main id="top" class="cake-shell">
+    <nav class="cake-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/cake-box.html">Cake boxes</a><span>/</span><span>{cake.title}</span></nav>
+    <a class="cake-back" href="/cake-box.html">← Back to cake boxes</a>
+    <div class="cake-detail">
+      <ProductCarousel interactive={["printed-plum-christmas", "printed-paper", "multi-colour-window", "white-regular", "cupcake", "colour-cake-boxes", "brown-corrugated"].includes(cake.id)} title={cake.title} images={[cake.image, ...gallery]} />
+      <div><div class="eyebrow">{cake.group}</div><h1>{cake.title}</h1><p>{cake.description ?? 'Choose your quantity and tell us about your branding requirements. We’ll help you confirm the right size, finish and price.'}</p><dl>{specs.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl>{cake.note && <p class="cake-note">{cake.note}</p>}<p>Price on request</p><a href={quote} class="btn btn-accent">Get a quote for this box <Icon name="arrow" /></a></div>
+    </div>
+    <section class="cake-related" aria-labelledby="related-heading"><h2 id="related-heading">More boxes to explore</h2><div class="cake-related-grid">{related.map(product => <a href={`/cake-box/${product.id}/`} class="cake-related-link"><div class="cake-photo"><img src={`/images/cakes/${product.image}`} alt={product.title} width="250" height="250" loading="lazy" /></div><h3>{product.title}</h3><span>View product <Icon name="arrow" size={16} /></span></a>)}</div></section>
+    <a class="text-link" href="/cake-box.html">Browse all cake boxes <Icon name="arrow" size={16} /></a>
+  </main><Footer />
+</Base>

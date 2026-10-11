@@ -1,0 +1,40 @@
+---
+import Logo from './Logo.astro';
+import { site } from '../data/site';
+---
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-brand">
+      <div class="brand"><Logo size={40} /><span class="brand-word">Vaniga</span></div>
+      <p>Packaging Supplier &amp; Exporter. Boxes, cups and containers sourced for your business.</p>
+    </div>
+    <div class="footer-col">
+      <h4>PRODUCTS</h4>
+      <a href="/cake-box.html">Cake &amp; bakery boxes</a>
+      <a href="/pizza-box.html">Pizza boxes</a>
+      <a href="/packaging/burger/">Burger &amp; chicken boxes</a>
+      <a href="/packaging/rolls/">Roll &amp; meal boxes</a>
+      <a href="/packaging/gifts/">Gift bags</a>
+      <a href="/packaging/eco/">Eco range</a>
+      <a href="/packaging/cartons/">Mono cartons</a>
+      <a href="/packaging/containers/">Paper food containers</a>
+    </div>
+    <div class="footer-col">
+      <h4>COMPANY</h4>
+      <a href="/#custom">Custom printing</a>
+      <a href="/#why">Why Vaniga</a>
+      <a href="/#industries">Who we serve</a>
+      <a href="/#quote">Get a quote</a>
+    </div>
+    <div class="footer-col footer-visit">
+      <h4>VISIT &amp; CALL</h4>
+      <address>{site.addressLines.join(', ')}</address>
+      <a href={site.phoneHref} class="footer-phone">{site.phone}</a>
+    </div>
+  </div>
+  <div class="footer-word" aria-hidden="true">Vaniga</div>
+  <div class="footer-bottom">
+    <span>© {new Date().getFullYear()} Vaniga Packaging Industries. All rights reserved.</span>
+    <span>Chennai, India</span>
+  </div>
+</footer>

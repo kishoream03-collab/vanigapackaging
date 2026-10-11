@@ -1,0 +1,15 @@
+---
+import { marquee } from '../data/site';
+---
+<div class="marquee" aria-hidden="true">
+  {[0, 1].map(() => (
+    <div class="marquee-track">
+      {marquee.map((m) => (
+        <>
+          <span>{m}</span>
+          <svg width="20" height="20" viewBox="0 0 32 32"><polygon points="16,16 26.4,10 16,4 5.6,10" fill="#FFFCF6"></polygon><polygon points="16,28 5.6,22 5.6,10 16,16" fill="#191814"></polygon><polygon points="16,28 26.4,22 26.4,10 16,16" fill="#D8B988"></polygon></svg>
+        </>
+      ))}
+    </div>
+  ))}
+</div>

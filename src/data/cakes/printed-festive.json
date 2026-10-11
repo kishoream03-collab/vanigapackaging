@@ -1,0 +1,106 @@
+[
+  {
+    "id": "printed-plum-christmas",
+    "title": "Christmas cake boxes",
+    "group": "Printed & festive",
+    "image": "plum-green-3d.png",
+    "size": "Large / Small",
+    "material": "Kraft paper / SBS board",
+    "gsm": "300 GSM / 350 GSM",
+    "finish": "Printed, with window",
+    "moq": 500,
+    "style": "Folding box",
+    "foodGrade": "Yes",
+    "shape": "Rectangle",
+    "specifications": [
+      [
+        "Options",
+        "Large / Small"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Material",
+        "Kraft Paper / SBS Board"
+      ],
+      [
+        "Dimensions (L x W x H) (in Inches)",
+        "Large : 9 x 4 x 2.5  / \nSmall : 7.7 x 4 x 2.5"
+      ],
+      [
+        "Shape",
+        "Rectangle"
+      ],
+      [
+        "Features",
+        "With Window"
+      ],
+      [
+        "Design",
+        "Printed"
+      ],
+      [
+        "Paper GSM",
+        "300 GSM / 350 GSM"
+      ],
+      [
+        "Box Style",
+        "Folding Box"
+      ],
+      [
+        "Food Grade",
+        "Yes"
+      ],
+      [
+        "Capacity",
+        "0.5 - 1 Kg"
+      ]
+    ],
+    "description": "Give your plum cakes a festive finish with printed boxes featuring a Christmas tree-shaped window. Available in large and small sizes, they make a thoughtful presentation for bakery sales, seasonal gifts and celebrations.",
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging."
+  },
+  {
+    "id": "printed-paper",
+    "title": "Printed paper cake box",
+    "group": "Printed & festive",
+    "image": "printed-paper-closed-3d.png",
+    "size": "7 × 7 × 5 inches",
+    "capacity": "500 g",
+    "material": "Paper",
+    "finish": "Multicolour",
+    "moq": 1000,
+    "shape": "Rectangular",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "1000 Piece"
+      ],
+      [
+        "Capacity",
+        "500 Gram"
+      ],
+      [
+        "Shape",
+        "Rectangular"
+      ],
+      [
+        "Size (L X W X H) (in Inches)",
+        "7 x 7 x 5"
+      ],
+      [
+        "Usage/Application",
+        "Cake Packaging"
+      ],
+      [
+        "Color",
+        "Multicolor"
+      ],
+      [
+        "Material Type",
+        "Paper"
+      ]
+    ]
+  }
+]

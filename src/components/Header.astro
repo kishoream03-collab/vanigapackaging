@@ -1,0 +1,58 @@
+---
+import cakes from '../data/cakes';
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { site, nav } from '../data/site';
+---
+<div class="strip">
+  <div><span>PACKAGING SUPPLIER &amp; EXPORTER</span><span class="kraft">CHENNAI · INDIA</span></div>
+  <div><a href={site.phoneHref}>CALL {site.phone}</a></div>
+</div>
+<header class="site-header">
+  <a href="/#top" class="brand" aria-label="Vaniga Packaging Industries, home">
+    <Logo />
+    <span class="brand-word">Vaniga</span>
+    <span class="brand-tag">PACKAGING</span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    {nav.map((n) => n.label === 'Products' ? <details class="products-menu"><summary>Products <span aria-hidden="true">⌄</span></summary><div class="products-menu-links"><a href="/packaging/">All packaging</a><a href="/cake-box.html">Cake boxes <span>{cakes.length} products</span></a><a href="/pizza-box.html">Pizza boxes <span>14 products</span></a>{['burger','rolls','containers','eco','cartons','gifts'].map(id=><a href={`/packaging/${id}/`}>{({burger:'Burger & chicken',rolls:'Roll & meal boxes',containers:'Food containers',eco:'Eco packaging',cartons:'Cartons & corrugated',gifts:'Gift bags'})[id]}</a>)}</div></details> : <a href={`/${n.href}`}>{n.label}</a>)}
+  </nav>
+  <div class="header-cta">
+    <a href={site.phoneHref} class="header-phone"><Icon name="phone" stroke={1.8} />{site.phone}</a>
+    <a href="/#quote" class="btn btn-accent btn-sm">Get a quote <Icon name="arrow" /></a>
+    <button type="button" class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <Icon name="menu" size={20} class="i-open" /><Icon name="close" size={20} class="i-close" />
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    {nav.map((n) => <><a href={`/${n.href}`}>{n.label}</a>{n.label === 'Products' && <><a href="/cake-box.html" class="mobile-cake-link">Cake boxes · {cakes.length} products</a><a href="/pizza-box.html" class="mobile-cake-link">Pizza boxes · 14 products</a></>}</>)}
+    <a href="/#quote" class="btn btn-accent">Get a quote <Icon name="arrow" /></a>
+  </div>
+</header>
+<style is:global>
+  .menu-btn .i-close { display: none; }
+  .menu-btn[aria-expanded='true'] .i-open { display: none; }
+  .menu-btn[aria-expanded='true'] .i-close { display: block; }
+</style>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const panel = document.getElementById('mobile-nav');
+  const setOpen = (open: boolean) => {
+    btn?.setAttribute('aria-expanded', String(open));
+    btn?.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    panel?.classList.toggle('open', open);
+  };
+  btn?.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
+  panel?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
+  const productsMenu = document.querySelector<HTMLDetailsElement>('.products-menu');
+  document.addEventListener('click', (event) => {
+    if (productsMenu && !productsMenu.contains(event.target as Node)) productsMenu.open = false;
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && productsMenu?.open) {
+      productsMenu.open = false;
+      productsMenu.querySelector('summary')?.focus();
+    }
+  });
+</script>

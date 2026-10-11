@@ -1,0 +1,70 @@
+---
+import Icon from './Icon.astro';
+import CakeArt from './CakeArt.astro';
+import PizzaArt from './PizzaArt.astro';
+import pizzas from '../data/pizzas.json';
+import packaging from '../data/packaging.json';
+import cakes from '../data/cakes';
+const cardArtwork: Record<string, string> = {burger:'Open kraft burger box with a cheeseburger', rolls:'Kraft meal box with biryani and a wrapped roll', containers:'Kraft food container with a salad and paper lid', eco:'Moulded bagasse clamshell with a takeaway meal', cartons:'Corrugated shipping box and folding mono carton'};
+const pizzaGroups = [...new Set(pizzas.flatMap(p => p.groups))];
+import { products } from '../data/products';
+
+const icons: Record<string, string> = { burger: 'bag', eco: 'leaf', cartons: 'box' };
+const bakeryLinks: Record<string, string> = {
+  'Printed & festive': '/cake-box.html?category=Printed%20%26%20festive#collection',
+  'Window boxes': '/cake-box.html?category=Window%20boxes#collection',
+  'Everyday boxes': '/cake-box.html?category=Everyday%20boxes#collection',
+  'Cupcake boxes': '/cake-box.html?category=Cupcake%20boxes#collection',
+  'Colour boxes': '/cake-box.html?category=Colour%20boxes#collection',
+  'Plum cake boxes': '/cake-box.html?category=Plum%20cake%20boxes#collection',
+  'Christmas cake boxes': '/cake-box.html?category=Christmas%20cake%20boxes#collection',
+};
+---
+<section id="products" class="section">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">01 — PRODUCTS</div>
+      <h2 class="h2">One supplier for every box on your counter.</h2>
+    </div>
+    <div class="aside">
+      <p>Over 30 box, carton and container styles for bakeries, pizzerias, burger and roll counters, cloud kitchens and brands — plain or printed, in the size you need. Tissue napkins and rolls too.</p>
+      <a href="/packaging/" class="text-link">Explore all collections <Icon name="arrow" /></a>
+    </div>
+  </div>
+
+  <div class="bento">
+    {products.map((p) => {
+      const cls = `c-${p.id}`;
+      if (p.id === 'bakery') {
+        return (
+          <article class={`card ${cls}`}>
+            <div class="card-top"><span class="card-idx">{p.index} / {p.tag}</span><a href="/cake-box.html" class="arrow-btn" aria-label="Browse all cake boxes"><Icon name="arrow-up-right" size={20} /></a></div>
+            <div class="bakery-heading-row">
+              <h3><a href="/cake-box.html" class="bakery-title-link">{p.title}</a></h3>
+              <a href="/cake-box.html" class="bakery-art-link" aria-label="Browse cake boxes"><CakeArt /><span class="bakery-art-caption">Explore collection <Icon name="arrow-up-right" size={14} /></span></a>
+            </div>
+            <div class="card-body">
+              <p>{p.blurb}</p>
+              <div class="chips">{Object.entries(bakeryLinks).map(([label, href]) => <a class="chip bakery-chip-link" href={href}>{label}</a>)}</div>
+              <div class="bakery-browse"><a href="/cake-box.html" class="btn bakery-browse-btn">Browse cake boxes <Icon name="arrow" size={18} /></a><span>{cakes.length} products</span></div>
+            </div>
+          </article>
+        );
+      }
+      if (p.id === 'pizza') {
+        return (<article class={`card ${cls}`}>
+          <div class="card-top"><span class="card-idx">{p.index} / {p.tag}</span><a href="/pizza-box.html" class="arrow-btn" aria-label="Browse all pizza boxes"><Icon name="arrow-up-right" size={20}/></a></div>
+          <div class="pizza-heading-row"><h3><a href="/pizza-box.html">{p.title}</a></h3><a href="/pizza-box.html" class="pizza-art-link" aria-label="Explore pizza box collection"><PizzaArt/></a></div><p>{p.blurb}</p><div class="chips">{pizzaGroups.map(group=><a class="chip" href={`/pizza-box.html?category=${encodeURIComponent(group)}#collection`}>{group}</a>)}</div><div class="bakery-browse"><a href="/pizza-box.html" class="btn bakery-browse-btn">Browse pizza boxes <Icon name="arrow" size={18}/></a><span>14 products</span></div>
+        </article>);
+      }
+      const items=packaging.filter(item=>item.category===p.id);
+      const groups=[...new Set(items.map(item=>item.group))];
+      const href=`/packaging/${p.id}/`;
+      return (<article class={`card ${cls} collection-card`}>
+        <div class="card-top"><span class="card-idx">{p.index} / {p.tag}</span><a href={href} class="arrow-btn" aria-label={`Browse ${p.title}`}><Icon name="arrow-up-right" size={20}/></a></div>
+        <div class="collection-heading-row"><h3><a href={href}>{p.title}</a></h3><a href={href} class="collection-image collection-render"><img src={`/images/${p.id}-box-render.png`} alt={cardArtwork[p.id]} width="500" height="500" loading="lazy"/></a></div>
+        <div class="card-body"><p>{p.blurb}</p><div class="chips">{groups.map(group=><a class="chip" href={`${href}?category=${encodeURIComponent(group)}#collection`}>{group}</a>)}</div><div class="collection-browse"><a class="btn" href={href}>Browse collection <Icon name="arrow" size={16}/></a><span>{items.length} products</span></div></div>
+      </article>);
+    })}
+  </div>
+</section>

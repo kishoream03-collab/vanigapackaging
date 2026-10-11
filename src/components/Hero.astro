@@ -1,0 +1,32 @@
+---
+import Icon from './Icon.astro';
+import HeroPhotos from './HeroPhotos.astro';
+---
+<section id="top" class="hero">
+  <div class="hero-copy">
+    <div class="pill"><i></i>Packaging Supplier &amp; Exporter · Chennai</div>
+    <h1>Boxes that make your food look <span>as good as it tastes.</span></h1>
+    <p class="hero-lede">We source and supply quality packaging from trusted manufacturers — from cake and pizza boxes to takeaway containers and mono cartons, with customization options for domestic and international customers.</p>
+    <div class="hero-actions">
+      <a href="#quote" class="btn btn-accent">Get a quote <Icon name="arrow" /></a>
+      <a href="#products" class="btn btn-outline">Browse 30+ products</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>30+</b><span>box, carton and container styles</span></div>
+      <div class="stat"><b>100%</b><span>food-grade certified materials</span></div>
+      <div class="stat"><b>Custom</b><span>sourcing, supply and export support</span></div>
+    </div>
+  </div>
+  <div class="hero-visual-wrap">
+    <div class="hero-visual hero-panel">
+      <HeroPhotos />
+    </div>
+    <div class="hero-badges">
+      <div class="float-card">
+        <div class="ico"><Icon name="tag" size={22} stroke={1.8} /></div>
+        <div><b>Custom sizes</b><span>Plain kraft or printed with your brand</span></div>
+      </div>
+      <div class="eco-tag"><Icon name="leaf" size={16} />Eco range available</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+---
+interface Props { title: string; images: string[]; folder?: string; interactive?: boolean; }
+const {title, images, folder = 'cakes', interactive = false} = Astro.props;
+---
+<section class="product-carousel" aria-label={`${title} photos`} aria-roledescription="carousel" data-title={title} data-interactive={interactive ? "true" : undefined}>
+  <div class="cake-photo" tabindex="0" aria-label="Product photo. Use left and right arrow keys to change photos.">
+    <img data-carousel-image src={`/images/${folder}/${images[0]}`} alt={`${title}, photo 1 of ${images.length}`} width="500" height="500" />
+  </div>
+  <div class="carousel-controls">
+    <button type="button" data-carousel-prev aria-label="Previous product photo" disabled={images.length < 2}>←</button>
+    <span data-carousel-count role="status" aria-live="polite">1 / {images.length}</span>
+    <button type="button" data-carousel-next aria-label="Next product photo" disabled={images.length < 2}>→</button>
+  </div>
+  {images.length === 1 && <p class="carousel-single">One product photo available.</p>}
+  <div class="cake-gallery" aria-label="Choose a product photo">
+    {images.map((image, i) => <button type="button" data-carousel-thumb data-src={`/images/${folder}/${image}`} aria-label={`Show ${title}, photo ${i + 1}`} aria-pressed={i === 0}><img src={`/images/${folder}/${image}`} alt={`${title}, view ${i + 1}`} width="125" height="125" loading="lazy" /></button>)}
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('.product-carousel').forEach(carousel => {
+    const thumbs = [...carousel.querySelectorAll<HTMLButtonElement>('[data-carousel-thumb]')];
+    const image = carousel.querySelector<HTMLImageElement>('[data-carousel-image]');
+    const count = carousel.querySelector<HTMLElement>('[data-carousel-count]');
+    const stage = carousel.querySelector<HTMLElement>('.cake-photo');
+    if (carousel.dataset.interactive && stage && image) {
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      stage.addEventListener('pointermove', event => {
+        if (motion.matches || event.pointerType !== 'mouse') return;
+        const rect = stage.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+        image.style.transform = `perspective(900px) rotateX(${-y * 10}deg) rotateY(${x * 12}deg) scale(1.045)`;
+      });
+      const reset = () => { image.style.transform = ''; };
+      stage.addEventListener('pointerleave', reset);
+      stage.addEventListener('blur', reset);
+      motion.addEventListener('change', reset);
+    }
+    let index = 0;
+    const show = (next: number) => {
+      index = (next + thumbs.length) % thumbs.length;
+      if (image) {
+        image.src = thumbs[index].dataset.src!;
+        image.alt = `${carousel.dataset.title}, photo ${index + 1} of ${thumbs.length}`;
+      }
+      if (count) count.textContent = `${index + 1} / ${thumbs.length}`;
+      thumbs.forEach((thumb, i) => thumb.setAttribute('aria-pressed', String(i === index)));
+    };
+    thumbs.forEach((thumb, i) => thumb.addEventListener('click', () => show(i)));
+    carousel.querySelector('[data-carousel-prev]')?.addEventListener('click', () => show(index - 1));
+    carousel.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(index + 1));
+    carousel.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault(); show(index + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    let startX = 0;
+    let startY = 0;
+    stage?.addEventListener('touchstart', event => {startX = event.changedTouches[0].clientX; startY = event.changedTouches[0].clientY;}, {passive:true});
+    stage?.addEventListener('touchend', event => {
+      const dx = event.changedTouches[0].clientX - startX;
+      const dy = event.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(index + (dx < 0 ? 1 : -1));
+    }, {passive:true});
+  });
+</script>
+
+<style>
+  [data-interactive] .cake-photo { overflow:hidden; }
+  [data-interactive] [data-carousel-image] { transition:transform 220ms ease-out; }
+  @media (prefers-reduced-motion: reduce) {
+    [data-interactive] [data-carousel-image] { transition:none;transform:none !important; }
+  }
+</style>

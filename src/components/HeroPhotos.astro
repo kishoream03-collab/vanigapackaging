@@ -1,0 +1,50 @@
+---
+import { gallery } from '../data/gallery';
+
+// All seven photos in three auto-scrolling columns (alternating direction).
+const byFile = Object.fromEntries(gallery.map((g) => [g.file, g]));
+const alt: Record<string, string> = {
+  'paper-pizza-boxes.jpg': 'Stack of plain white paper pizza boxes',
+  'plain-pizza-packaging-box.jpg': 'Plain pizza packaging box, open',
+  'pizza-corrugated-printed.jpg': 'Printed corrugated pizza box with a hand-drawn pizza design',
+  'printed-pizza-box.jpg': 'Printed pizza box, flat kraft board',
+  'printed-plum-cake-box.jpg': 'Two printed Christmas plum cake boxes, one green and one red',
+  'printed-corrugated-boxes.jpg': 'Printed corrugated pizza boxes, closed and open',
+  'eco-clamshell-box.jpg': 'Eco friendly burger clamshell boxes',
+};
+const label: Record<string, string> = {
+  'paper-pizza-boxes.jpg': 'Paper pizza boxes',
+  'plain-pizza-packaging-box.jpg': 'Plain pizza box',
+  'pizza-corrugated-printed.jpg': 'Printed corrugated pizza box',
+  'printed-pizza-box.jpg': 'Printed pizza box',
+  'printed-plum-cake-box.jpg': 'Plum cake boxes',
+  'printed-corrugated-boxes.jpg': 'Corrugated pizza boxes',
+  'eco-clamshell-box.jpg': 'Eco clamshell boxes',
+};
+const columns = [
+  { dir: 'up', dur: 46, files: ['printed-corrugated-boxes.jpg', 'plain-pizza-packaging-box.jpg'] },
+  { dir: 'down', dur: 52, files: ['printed-pizza-box.jpg', 'paper-pizza-boxes.jpg', 'printed-plum-cake-box.jpg'] },
+  { dir: 'up', dur: 40, files: ['eco-clamshell-box.jpg', 'pizza-corrugated-printed.jpg'] },
+];
+---
+<div class="hero-photos">
+  {columns.map((col) => (
+    <div class="wall-col">
+      <div class={`track track-${col.dir}`} style={`--dur:${col.dur}s`}>
+        {[0, 1, 2].map((copy) => (
+          <div class="set" aria-hidden={copy > 0 ? 'true' : undefined}>
+            {col.files.map((f) => {
+              const g = byFile[f];
+              return (
+                <figure class="print">
+                  <img src={`/images/products/${g.file}`} alt={copy === 0 ? alt[f] : ''} width={g.w} height={g.h} loading={copy === 0 ? 'eager' : 'lazy'} draggable="false" />
+                  <figcaption>{label[f]}</figcaption>
+                </figure>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>

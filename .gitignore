@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.env
+
+# Local settings and secrets
+.env.*
+!.env.example
+.DS_Store

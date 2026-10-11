@@ -1,0 +1,43 @@
+[
+  {
+    "id": "printed-paper-burger-box",
+    "title": "Printed paper burger box",
+    "photos": 3,
+    "mergedFrom": [
+      "printed-burger-box"
+    ]
+  },
+  {
+    "id": "fried-chicken-box",
+    "title": "Fried & broasted chicken box",
+    "photos": 2,
+    "mergedFrom": [
+      "broasted-chicken-box"
+    ]
+  },
+  {
+    "id": "mono-carton-packaging-box",
+    "title": "Kraft mono carton packaging box",
+    "photos": 5,
+    "mergedFrom": [
+      "duplex-monocarton-box-manufacture-in-bangalore",
+      "duplex-monocarton-box"
+    ]
+  },
+  {
+    "id": "mono-carton-boxes-manufacturers-in-bengaluru",
+    "title": "Brown kraft mono carton box",
+    "photos": 4,
+    "mergedFrom": [
+      "mono-cartons-corrugated-boxes"
+    ]
+  },
+  {
+    "id": "cupcake-packaging-box",
+    "title": "Printed cupcake packaging box",
+    "photos": 7,
+    "mergedFrom": [
+      "packaging-box-for-cupcakes"
+    ]
+  }
+]

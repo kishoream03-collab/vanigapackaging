@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+import Dieline from './Dieline.astro';
+import { steps } from '../data/site';
+---
+<section id="custom" class="section custom">
+  <div class="custom-copy">
+    <div class="eyebrow">02 — CUSTOM PRINTING</div>
+    <h2 class="h2">Your brand on every box that leaves the kitchen.</h2>
+    <p class="custom-lede">Send us your logo and box size. We coordinate printing with our manufacturing partners on the style that suits your product, so every delivery doubles as advertising.</p>
+    <ol class="steps">
+      {steps.map(([t, d], i) => (
+        <li><span class="n">{String(i + 1).padStart(2, '0')}</span><div><b>{t}</b><span>{d}</span></div></li>
+      ))}
+    </ol>
+    <a href="#quote" class="btn btn-accent">Start a custom order <Icon name="arrow" /></a>
+  </div>
+  <div class="dieline-wrap dotted"><Dieline /></div>
+</section>

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "white-regular",
+    "title": "White regular cake box",
+    "group": "Everyday boxes",
+    "image": "white-regular-3d-1.png",
+    "size": "Regular: 8 × 8 × 5 inches; corrugated sizes on request",
+    "capacity": "500 g",
+    "material": "Paper / corrugated paper",
+    "finish": "White",
+    "shape": "Rectangular",
+    "specifications": [
+      [
+        "Options",
+        "Regular paper / Corrugated paper"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces"
+      ],
+      [
+        "Material",
+        "Paper / Corrugated paper"
+      ],
+      [
+        "Dimensions (L x W x H) (in Inches)",
+        "8 x 8 x 5"
+      ],
+      [
+        "Capacity",
+        "0.5 kg - 1 kg"
+      ],
+      [
+        "Usage/Application",
+        "Cake packaging"
+      ]
+    ],
+    "description": "Keep your cake presentation simple with clean white boxes for everyday bakery orders and celebrations. Choose regular paper or corrugated paper options to suit your packaging needs.",
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging."
+  },
+  {
+    "id": "brown-corrugated",
+    "title": "Brown corrugated cake box",
+    "group": "Everyday boxes",
+    "image": "brown-corrugated-3d-1.png",
+    "size": "8 × 8 × 5 inches",
+    "capacity": "500 g",
+    "material": "Corrugated paper",
+    "gsm": "250 GSM",
+    "finish": "Brown",
+    "moq": 1000,
+    "shape": "Square base",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "1,000 pieces"
+      ],
+      [
+        "Material",
+        "Corrugated paper"
+      ],
+      [
+        "Dimensions (L x W x H) (in Inches)",
+        "8 x 8 x 5"
+      ],
+      [
+        "Shape",
+        "Square base"
+      ],
+      [
+        "Design",
+        "Plain brown"
+      ],
+      [
+        "Paper GSM",
+        "250 GSM"
+      ],
+      [
+        "Capacity",
+        "500 g"
+      ],
+      [
+        "Usage/Application",
+        "Cake packaging"
+      ]
+    ],
+    "description": "Give your cakes a simple, natural presentation with brown corrugated boxes. The plain finish suits everyday bakery orders and offers space for your own labels or branding.",
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging."
+  }
+]

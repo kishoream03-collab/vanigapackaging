@@ -1,0 +1,120 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+import { products, extraQuoteOptions } from '../data/products';
+import cakes from '../data/cakes';
+import pizzas from '../data/pizzas.json';
+import packaging from '../data/packaging.json';
+import productRedirects from '../data/product-redirects.json';
+import cakeRedirects from '../data/cake-redirects.json';
+import {collections} from '../data/collections';
+
+const endpoint = import.meta.env.PUBLIC_QUOTE_ENDPOINT ?? '';
+const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 – 25,000'], ['25kplus', '25,000+']];
+---
+<section id="quote" class="section quote dotted">
+  <div class="quote-copy">
+    <div class="eyebrow">04 — GET A QUOTE</div>
+    <h2>Tell us what you're packing.</h2>
+    <p class="quote-lede">Share a few details and we'll get back to you with the right box, size options and a price.</p>
+
+    <div class="contact">
+      <div class="who">
+        <div class="avatar" aria-hidden="true">GB</div>
+        <div><b>Girish Basappa</b><span>Proprietor, Vaniga Packaging Industries</span></div>
+      </div>
+      <hr />
+      <div class="row"><Icon name="phone" size={20} stroke={1.8} class="kraft-ico" /><a href={site.phoneHref}>{site.phone}</a></div>
+      <div class="row"><Icon name="mail" size={20} stroke={1.8} class="kraft-ico" /><span>{site.email}</span></div>
+      <div class="row top">
+        <Icon name="pin" size={20} stroke={1.8} class="kraft-ico" />
+        <address>{site.addressLines.join(', ')}</address>
+      </div>
+      <a href={site.mapsHref} class="directions" target="_blank" rel="noopener">View location <Icon name="arrow-up-right" size={16} /></a>
+    </div>
+  </div>
+
+  <form class="form" id="quote-form" data-endpoint={endpoint} data-product-aliases={JSON.stringify({...productRedirects,...cakeRedirects})} novalidate>
+    <div class="form-head"><h3>Request a quote</h3><span>TAKES A MINUTE</span></div>
+    <div class="fields">
+      <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" placeholder="Full name" autocomplete="name" required /></div>
+      <div class="field"><label for="q-biz">Business name</label><input id="q-biz" name="business" type="text" placeholder="Bakery, restaurant or brand" autocomplete="organization" /></div>
+      <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" placeholder="+91" autocomplete="tel" required /></div>
+      <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" placeholder="you@business.com" autocomplete="email" /></div>
+      <div class="field">
+        <label for="q-product">What do you need?</label>
+        <select id="q-product" name="product">
+          <option value="">Choose a product</option>
+          {products.map((p) => <option value={p.id}>{p.title}</option>)}
+          <option value="gifts">Gift bags</option>
+          {extraQuoteOptions.map((o) => <option value={o.id}>{o.title}</option>)}
+          <optgroup label="Cake boxes">{cakes.map(cake => <option value={cake.id}>{cake.title}</option>)}</optgroup>
+          {collections.map(c=><optgroup label={c.title}>{packaging.filter(p=>p.category===c.id).map(p=><option value={p.id}>{p.title}</option>)}</optgroup>)}
+          <optgroup label="Pizza boxes">{pizzas.map(pizza => <option value={pizza.id}>{pizza.title}</option>)}</optgroup>
+        </select>
+      </div>
+      <div class="field">
+        <label for="q-qty">Quantity</label>
+        <select id="q-qty" name="quantity">
+          <option value="">Approximate pieces</option>
+          {qty.map(([v, l]) => <option value={v}>{l}</option>)}
+        </select>
+      </div>
+    </div>
+    <div class="field"><label for="q-msg">Anything else?</label><textarea id="q-msg" name="message" rows="4" placeholder="Box size, print colours, delivery location…"></textarea></div>
+    <div class="check"><input id="q-print" name="print_logo" type="checkbox" /><label for="q-print">Print my logo on the boxes</label></div>
+    <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+    <button type="submit" class="btn btn-accent" id="form-submit">Request a quote <Icon name="arrow" /></button>
+    <p class="form-note">We'll reply by phone or email.</p>
+  </form>
+</section>
+
+<style is:global>
+  .kraft-ico { color: var(--kraft); }
+</style>
+
+<script>
+  let cakeId = new URLSearchParams(window.location.search).get('cake') ?? new URLSearchParams(window.location.search).get('pizza') ?? new URLSearchParams(window.location.search).get('product');
+  const aliases = JSON.parse(document.getElementById('quote-form')?.dataset.productAliases ?? '{}');
+  if (cakeId && aliases[cakeId]) cakeId = aliases[cakeId];
+  const productSelect = document.getElementById('q-product') as HTMLSelectElement | null;
+  if (cakeId && productSelect && [...productSelect.options].some(option => option.value === cakeId)) {
+    productSelect.value = cakeId;
+  }
+  const form = document.getElementById('quote-form') as HTMLFormElement | null;
+  const statusEl = document.getElementById('form-status');
+  const submit = document.getElementById('form-submit') as HTMLButtonElement | null;
+
+  const show = (kind: 'ok' | 'err', msg: string) => {
+    if (!statusEl) return;
+    statusEl.textContent = msg;
+    statusEl.className = `form-status show ${kind}`;
+  };
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const endpoint = form.dataset.endpoint;
+    if (!endpoint) {
+      show('err', 'Online quotes are not switched on yet. Please call +91-984-161-4588 and we will help you straight away.');
+      return;
+    }
+
+    if (submit) submit.disabled = true;
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      form.reset();
+      show('ok', "Thanks — we've got your request and will reply by phone or email.");
+    } catch {
+      show('err', 'Something went wrong sending that. Please try again, or call +91-984-161-4588.');
+    } finally {
+      if (submit) submit.disabled = false;
+    }
+  });
+</script>
