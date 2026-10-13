@@ -1,5 +1,5 @@
 export const site = {
-  name: 'Vaniga Packaging Industries',
+  name: 'Vaniga Packaging',
   phone: '+91-789-283-8275',
   phoneHref: 'tel:+917892838275',
   email: 'info@vanigapackaging.com',
