@@ -1,8 +1,8 @@
 export const site = {
   name: 'Vaniga Packaging Industries',
-  phone: '+91-984-161-4588',
-  phoneHref: 'tel:+919841614588',
-  email: '[YOUR EMAIL ADDRESS]',
+  phone: '+91-789-283-8275',
+  phoneHref: 'tel:+917892838275',
+  email: 'info@vanigapackaging.com',
   addressLines: ['Chennai', 'India'],
   mapsHref:
     'https://www.google.com/maps/search/?api=1&query=Chennai+India',
