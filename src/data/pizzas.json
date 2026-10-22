@@ -2,7 +2,7 @@
   {
     "id": "printed-pizza-boxes",
     "title": "Printed pizza boxes",
-    "image": "printed-pizza-3d-red-closed-slogan.png",
+    "image": "printed-pizza-3d-red-closed-slogan.webp",
     "group": "Printed boxes",
     "groups": [
       "Printed boxes"
@@ -41,7 +41,7 @@
   {
     "id": "brown-corrugated-pizza-boxes",
     "title": "Brown corrugated pizza boxes",
-    "image": "brown-corrugated-3d-open.png",
+    "image": "brown-corrugated-3d-open.webp",
     "group": "Brown corrugated boxes",
     "groups": [
       "Brown corrugated boxes"
@@ -80,7 +80,7 @@
   {
     "id": "white-pizza-boxes",
     "title": "White pizza boxes",
-    "image": "white-pizza-3d-1.png",
+    "image": "white-pizza-3d-1.webp",
     "group": "White boxes",
     "groups": [
       "White boxes"

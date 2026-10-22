@@ -62,7 +62,7 @@ const bakeryLinks: Record<string, string> = {
       const href=`/packaging/${p.id}/`;
       return (<article class={`card ${cls} collection-card`}>
         <div class="card-top"><span class="card-idx">{p.index} / {p.tag}</span><a href={href} class="arrow-btn" aria-label={`Browse ${p.title}`}><Icon name="arrow-up-right" size={20}/></a></div>
-        <div class="collection-heading-row"><h3><a href={href}>{p.title}</a></h3><a href={href} class="collection-image collection-render"><img src={`/images/${p.id}-box-render.png`} alt={cardArtwork[p.id]} width="500" height="500" loading="lazy"/></a></div>
+        <div class="collection-heading-row"><h3><a href={href}>{p.title}</a></h3><a href={href} class="collection-image collection-render"><img src={`/images/${p.id}-box-render.webp`} alt={cardArtwork[p.id]} width="500" height="500" loading="lazy"/></a></div>
         <div class="card-body"><p>{p.blurb}</p><div class="chips">{groups.map(group=><a class="chip" href={`${href}?category=${encodeURIComponent(group)}#collection`}>{group}</a>)}</div><div class="collection-browse"><a class="btn" href={href}>Browse collection <Icon name="arrow" size={16}/></a><span>{items.length} products</span></div></div>
       </article>);
     })}

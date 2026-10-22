@@ -1,43 +1,43 @@
 {
   "cupcake": [
-    "cupcake-3d-2.png",
-    "cupcake-3d-3.png",
-    "cupcake-3d-4.png",
-    "cupcake-3d-5.png"
+    "cupcake-3d-2.webp",
+    "cupcake-3d-3.webp",
+    "cupcake-3d-4.webp",
+    "cupcake-3d-5.webp"
   ],
   "printed-paper": [
-    "printed-paper-open-3d.png",
-    "printed-paper-floral-3d.png",
-    "printed-paper-teal-3d.png"
+    "printed-paper-open-3d.webp",
+    "printed-paper-floral-3d.webp",
+    "printed-paper-teal-3d.webp"
   ],
   "white-regular": [
-    "white-regular-3d-2.png",
-    "white-regular-3d-3.png"
+    "white-regular-3d-2.webp",
+    "white-regular-3d-3.webp"
   ],
   "brown-corrugated": [
-    "brown-corrugated-3d-2.png",
-    "brown-corrugated-3d-3.png"
+    "brown-corrugated-3d-2.webp",
+    "brown-corrugated-3d-3.webp"
   ],
   "printed-plum-christmas": [
-    "plum-red-3d.png"
+    "plum-red-3d.webp"
   ],
   "l-window": [
-    "white-standard-window-3d-2.png",
-    "white-window-3d-3.png",
-    "white-window-3d-4.png",
-    "white-standard-window-3d.png"
+    "white-standard-window-3d-2.webp",
+    "white-window-3d-3.webp",
+    "white-window-3d-4.webp",
+    "white-standard-window-3d.webp"
   ],
   "multi-colour-window": [
-    "multi-window-3d-2.png",
-    "multi-window-3d-3.png",
-    "multi-window-3d-4.png",
-    "multi-window-3d-5.png",
-    "mint-blue-gallery-1.jpg",
-    "mint-blue-gallery-2.jpg",
-    "pink-gallery-1.jpg",
-    "pink-gallery-2.jpg"
+    "multi-window-3d-2.webp",
+    "multi-window-3d-3.webp",
+    "multi-window-3d-4.webp",
+    "multi-window-3d-5.webp",
+    "mint-blue-gallery-1.webp",
+    "mint-blue-gallery-2.webp",
+    "pink-gallery-1.webp",
+    "pink-gallery-2.webp"
   ],
   "colour-cake-boxes": [
-    "colour-pink-3d.png"
+    "colour-pink-3d.webp"
   ]
 }
