@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import countries from '../../public/api/countries.json';
 import { site } from '../data/site';
 import { products, extraQuoteOptions } from '../data/products';
 import cakes from '../data/cakes';
@@ -43,7 +44,8 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 â€“ 5,000'], ['25k', '5,000 â€
     <div class="fields">
       <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" placeholder="Full name" autocomplete="name" required /></div>
       <div class="field"><label for="q-biz">Business name</label><input id="q-biz" name="business" type="text" placeholder="Bakery, restaurant or brand" autocomplete="organization" /></div>
-      <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" placeholder="+91" autocomplete="tel" required /></div>
+      <div class="field"><label for="q-country">Country / phone code</label><select id="q-country" name="country" autocomplete="country" required><option value="">Choose your country</option>{countries.map(country => <option value={country.id}>{country.name} ({country.dialCode})</option>)}</select></div>
+      <div class="field"><label for="q-phone">Phone number</label><input id="q-phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel-national" required /></div>
       <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" placeholder="you@business.com" autocomplete="email" /></div>
       <div class="field">
         <label for="q-product">What do you need?</label>

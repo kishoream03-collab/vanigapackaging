@@ -26,15 +26,22 @@ if (field('_gotcha', 200) !== '') respond(200, 'Request received.');
 $name = field('name', 200);
 $phone = field('phone', 80);
 $email = field('email', 254);
+$countryId = field('country', 10);
+$countries = json_decode(file_get_contents(__DIR__ . '/countries.json'), true);
+$country = null;
+foreach ($countries as $option) {
+    if ($option['id'] === $countryId) { $country = $option; break; }
+}
+if ($country === null) respond(422, 'Please choose your country and phone code.');
 if ($name === '' || $phone === '' || preg_match('/[\r\n]/', $name . $phone . $email)) respond(422, 'Please enter your name and phone number.');
 if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) respond(422, 'Please enter a valid email address.');
 $details = [
-    'Name' => $name, 'Business' => field('business', 300), 'Phone' => $phone,
+    'Name' => $name, 'Business' => field('business', 300), 'Country' => $country['name'], 'Phone code' => $country['dialCode'], 'Phone' => $phone,
     'Email' => $email, 'Product' => field('product', 300),
     'Quantity' => field('quantity', 100), 'Print logo' => field('print_logo', 20),
     'Message' => field('message', 8000),
 ];
-$configPath = dirname(__DIR__, 3) . '/vaniga-quote-config.php';
+$configPath = dirname(__DIR__, 2) . '/vaniga-quote-config.php';
 if (!is_file($configPath)) respond(503, 'Online quotes are temporarily unavailable. Please call +91-789-283-8275.');
 try {
     $config = require $configPath;
