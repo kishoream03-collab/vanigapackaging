@@ -576,3 +576,14 @@ img, svg { max-width: 100%; }
  .bento :is(.c-rolls,.c-containers,.c-eco,.c-cartons) .collection-render {max-width:100%;}
  .bento :is(.c-rolls,.c-containers,.c-eco,.c-cartons) .collection-render img {max-height:280px;}
 }
+/* Gentle colour grading for the restored Roll & meal product photographs. */
+img:is(
+  [src*="/packaging/roll-shawarma-sleeves-photo-"],
+  [src*="/packaging/noodle-packaging-paper-box-photo-"],
+  [src*="/packaging/biryani-packaging-box-photo-"],
+  [src*="/packaging/dosa-boxes-photo-"],
+  [src*="/packaging/duplex-sandwich-box-photo-"],
+  [src*="/packaging/meal-catering-boxes-photo-"]
+) {
+  filter: saturate(0.94) brightness(1.02);
+}

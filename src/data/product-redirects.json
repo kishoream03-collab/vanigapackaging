@@ -1,8 +1,24 @@
 {
-  "printed-burger-box": "printed-paper-burger-box",
+  "printed-burger-box": "printed-burger-boxes",
   "broasted-chicken-box": "fried-chicken-box",
   "duplex-monocarton-box-manufacture-in-bangalore": "mono-carton-packaging-box",
   "duplex-monocarton-box": "mono-carton-packaging-box",
   "mono-cartons-corrugated-boxes": "mono-carton-boxes-manufacturers-in-bengaluru",
-  "packaging-box-for-cupcakes": "cupcake-packaging-box"
+  "packaging-box-for-cupcakes": "cupcake-packaging-box",
+  "burger-packaging-box": "printed-burger-boxes",
+  "printed-paper-burger-box": "printed-burger-boxes",
+  "printed-clamshell-box-burger": "printed-burger-boxes",
+  "printed-burger-packaging-boxes": "printed-burger-boxes",
+  "white-regular-burger-box": "white-burger-boxes",
+  "white-paper-burger-box": "white-burger-boxes",
+  "brown-regular-burger-box": "brown-burger-boxes",
+  "plain-brown-burger-box": "brown-burger-boxes",
+  "food-paper-boat-tray": "paper-boat-trays",
+  "disposable-paper-boat-tray": "paper-boat-trays",
+  "paper-boat-tray": "paper-boat-trays",
+  "chicken-roll-packing-box": "roll-shawarma-sleeves",
+  "shawarma-roll-packing-box": "roll-shawarma-sleeves",
+  "kati-roll-box": "roll-shawarma-sleeves",
+  "dosa-box-manufacturers": "dosa-boxes",
+  "iftar-box-manufactuer": "meal-catering-boxes"
 }

@@ -22,15 +22,15 @@ export const products: Product[] = [
     aria: 'Enquire about pizza boxes',
   },
   {
-    id: 'burger', index: '03', tag: 'BURGERS & CHICKEN', title: 'Burger & chicken boxes',
+    id: 'burger', index: '03', tag: 'BURGERS & SNACKS', title: 'Burger, chicken & snack packaging',
     blurb: 'Plain white, brown or printed, plus trays and fries boxes for the counter.',
-    chips: ['White & brown burger boxes', 'Printed clamshells', 'Fried chicken boxes', 'Broasted chicken boxes', 'Paper boat trays', 'Popcorn & fries boxes'],
-    aria: 'Enquire about burger and chicken boxes',
+    chips: ['Printed burger boxes', 'White burger boxes', 'Brown burger boxes', 'Chicken boxes', 'Paper boat trays', 'Popcorn & fries packaging'],
+    aria: 'Enquire about burger, chicken and snack packaging',
   },
   {
     id: 'rolls', index: '04', tag: 'ROLLS & MEALS', title: 'Roll, biryani & meal boxes',
     blurb: 'For roll counters, darshinis and cloud kitchens.',
-    chips: ['Shawarma roll', 'Kati roll', 'Chicken roll', 'Biryani', 'Dosa', 'Noodles', 'Sandwich', 'Iftar'],
+    chips: ['Roll & shawarma sleeves', 'Noodle boxes', 'Biryani boxes', 'Dosa boxes', 'Sandwich boxes', 'Meal & catering boxes'],
     aria: 'Enquire about roll, biryani and meal boxes',
   },
   {

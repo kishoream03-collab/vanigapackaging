@@ -7,9 +7,8 @@ seen={};items=[];jobs={}
 for c in audit:
  for p in c['products']:
   key=(identity(p['images'][0]),json.dumps(p['specs']))
-  source=c['url']+'#'+(p['anchor'] or '')
   if key in seen:
-   old=seen[key];old['sources'].append(source)
+   old=seen[key]
    for url in p['images']:
     if url not in old['sourceImages']:old['sourceImages'].append(url)
    continue
@@ -19,7 +18,7 @@ for c in audit:
   elif any(x in t for x in ['burger','chicken box','boat tray','paper tray','popcorn']):category='burger'
   elif any(x in t for x in ['roll','biryani','dosa','noodle','sandwich','iftar']):category='rolls'
   elif any(x in t for x in ['cake','brownie','sweet']):category='bakery'
-  elif 'pizza' in t:category='pizza'
+  elif 'pizza' in t:continue
   elif 'container' in t or 'paper food boxes' in t:category='containers'
   else:category='cartons'
   slug=re.sub(r'[^a-z0-9]+','-',t).strip('-');id=slug
@@ -36,7 +35,7 @@ for c in audit:
   specs=list(p['specs']);note=[]
   if not size:specs.append(['Dimensions','Available sizes need confirmation']);note.append('The source does not list dimensions. Please confirm your required size with your quote.')
   if not any('minimum' in k.lower() for k,v in specs):specs.append(['Minimum order','Confirm quantity with your quote'])
-  item=dict(id=id,title=title,category=category,group=sub,size=size,material=material,specifications=specs,note=' '.join(note),sources=[source],sourceImages=p['images'],sourceCategory=c['category'])
+  item=dict(id=id,title=title,category=category,group=sub,size=size,material=material,specifications=specs,note=' '.join(note),sourceImages=p['images'],sourceCategory=c['category'])
   seen[key]=item;items.append(item)
 for p in items:
  files=[]

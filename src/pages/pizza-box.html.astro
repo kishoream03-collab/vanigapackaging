@@ -7,12 +7,12 @@ import pizzas from '../data/pizzas.json';
 import '../styles/cakes.css';
 const groups = [...new Set(pizzas.flatMap(p => p.groups))];
 ---
-<Base title="Pizza Boxes — Printed, Kraft & Corrugated Packaging | Vaniga" description="Explore 14 pizza packaging listings with photos, dimensions and specifications. Supplied by Vaniga, your packaging supplier and exporter.">
+<Base title="Pizza Boxes — Printed, Kraft & Corrugated Packaging | Vaniga" description="Explore three pizza packaging families with photos, dimensions and specifications. Supplied by Vaniga, your packaging supplier and exporter.">
   <Header />
   <main id="top" class="cake-shell">
     <nav class="cake-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/#products">Products</a><span>/</span><span>Pizza boxes</span></nav>
-    <section class="cake-intro"><div><div class="eyebrow">THE PIZZERIA EDIT</div><h1>Good pizza deserves<br />a great box.</h1></div><p>Printed, plain, kraft and corrugated packaging. Compare sizes and materials, explore every product photo, and find a box for your brand.</p></section>
-    <div class="cake-toolbar" id="collection"><div class="cake-filter"><label for="cake-category">Explore the collection</label><select id="cake-category"><option value="all">All pizza boxes</option>{groups.map(group => <option>{group}</option>)}</select></div><span class="cake-count" id="cake-count" aria-live="polite">14 product listings</span></div>
+    <section class="cake-intro"><div><div class="eyebrow">THE PIZZERIA EDIT</div><h1>Good pizza deserves<br />a great box.</h1></div><p>Brown corrugated, white and printed pizza boxes. Compare sizes and materials, explore every product photo, and find a box for your brand.</p></section>
+    <div class="cake-toolbar" id="collection"><div class="cake-filter"><label for="cake-category">Explore the collection</label><select id="cake-category"><option value="all">All pizza boxes</option>{groups.map(group => <option>{group}</option>)}</select></div><span class="cake-count" id="cake-count" aria-live="polite">{pizzas.length} product families</span></div>
     <div class="cake-list">
       {pizzas.map((p, i) => <article class="cake-item" data-groups={p.groups.join('|')}>
         <a href={`/pizza-box/${p.id}/`} class="cake-photo" aria-label={`View ${p.title}`}><img src={`/images/pizza/${p.image}`} alt={p.title} width="250" height="250" loading={i < 2 ? 'eager' : 'lazy'} /></a>
@@ -31,7 +31,7 @@ const groups = [...new Set(pizzas.flatMap(p => p.groups))];
       if (!item.hidden) visible++;
     });
     const count = document.getElementById('cake-count');
-    if (count) count.textContent = `${visible} product ${visible === 1 ? 'listing' : 'listings'}`;
+    if (count) count.textContent = `${visible} product ${visible === 1 ? 'family' : 'families'}`;
   };
   const initial = new URLSearchParams(window.location.search).get('category');
   if (initial && [...category.options].some(option => option.value === initial)) category.value = initial;

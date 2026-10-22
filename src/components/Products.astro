@@ -54,7 +54,7 @@ const bakeryLinks: Record<string, string> = {
       if (p.id === 'pizza') {
         return (<article class={`card ${cls}`}>
           <div class="card-top"><span class="card-idx">{p.index} / {p.tag}</span><a href="/pizza-box.html" class="arrow-btn" aria-label="Browse all pizza boxes"><Icon name="arrow-up-right" size={20}/></a></div>
-          <div class="pizza-heading-row"><h3><a href="/pizza-box.html">{p.title}</a></h3><a href="/pizza-box.html" class="pizza-art-link" aria-label="Explore pizza box collection"><PizzaArt/></a></div><p>{p.blurb}</p><div class="chips">{pizzaGroups.map(group=><a class="chip" href={`/pizza-box.html?category=${encodeURIComponent(group)}#collection`}>{group}</a>)}</div><div class="bakery-browse"><a href="/pizza-box.html" class="btn bakery-browse-btn">Browse pizza boxes <Icon name="arrow" size={18}/></a><span>14 products</span></div>
+          <div class="pizza-heading-row"><h3><a href="/pizza-box.html">{p.title}</a></h3><a href="/pizza-box.html" class="pizza-art-link" aria-label="Explore pizza box collection"><PizzaArt/></a></div><p>{p.blurb}</p><div class="chips">{pizzaGroups.map(group=><a class="chip" href={`/pizza-box.html?category=${encodeURIComponent(group)}#collection`}>{group}</a>)}</div><div class="bakery-browse"><a href="/pizza-box.html" class="btn bakery-browse-btn">Browse pizza boxes <Icon name="arrow" size={18}/></a><span>{pizzas.length} products</span></div>
         </article>);
       }
       const items=packaging.filter(item=>item.category===p.id);

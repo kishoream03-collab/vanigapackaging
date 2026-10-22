@@ -49,9 +49,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#window-cake-boxes"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-1.jpeg",
     "gallery": [
@@ -102,10 +99,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#mono-carton-boxes-manufacturers-in-bengaluru",
-      "https://www.preranapackaging.net/corrugated-packaging-boxes-and-packaging-boxes.html#mono-cartons-corrugated-boxes"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-4.jpg",
     "gallery": [
@@ -119,225 +112,258 @@
     ]
   },
   {
-    "id": "burger-packaging-box",
-    "title": "Burger Packaging Box",
+    "id": "printed-burger-boxes",
+    "title": "Printed burger boxes",
     "category": "burger",
-    "group": "Burger boxes",
+    "group": "Printed burger boxes",
+    "size": "Multiple styles available",
+    "material": "Paperboard / cardboard",
+    "specifications": [
+      [
+        "Options",
+        "Printed clamshell / Printed tuck-top carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 - 1000 pieces, depending on style"
+      ],
+      [
+        "Material",
+        "Paperboard / cardboard"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "Printed paper option: Approx. 5 x 7 x 3 inches \nPrinted tuck-top carton: 4 x 4 x 3 inches "
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. Reference images illustrate print options. Confirm the selected style and internal dimensions before ordering.",
+    "sourceCategory": "Packaging Box",
+    "image": "printed-burger-photo-1.png",
+    "gallery": [
+      "printed-burger-photo-1.png",
+      "printed-burger-photo-2.png"
+    ],
+    "mergedFrom": [
+      "printed-burger-box",
+      "burger-packaging-box",
+      "printed-paper-burger-box",
+      "printed-clamshell-box-burger",
+      "printed-burger-packaging-boxes"
+    ]
+  },
+  {
+    "id": "white-burger-boxes",
+    "title": "White burger boxes",
+    "category": "burger",
+    "group": "White burger boxes",
+    "size": "Dimensions on confirmation",
+    "material": "White paperboard",
+    "specifications": [
+      [
+        "Options",
+        "White clamshell / White tuck-top carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 - 1000 pieces"
+      ],
+      [
+        "Material",
+        "White paperboard; board grade on request"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "5 x 7 x 3 inches"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. The original listings share dimensions but show different box styles. Confirm the dimensions of your selected style.",
+    "sourceCategory": "Burger Box",
+    "image": "white-burger-photo-1.png",
+    "gallery": [
+      "white-burger-photo-1.png",
+      "white-burger-photo-2.png"
+    ],
+    "mergedFrom": [
+      "white-regular-burger-box",
+      "white-paper-burger-box"
+    ]
+  },
+  {
+    "id": "brown-burger-boxes",
+    "title": "Brown burger boxes",
+    "category": "burger",
+    "group": "Brown burger boxes",
+    "size": "Multiple sizes available",
+    "material": "Kraft paperboard / corrugated paper",
+    "specifications": [
+      [
+        "Options",
+        "Brown clamshell / Brown corrugated tuck-top carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 - 1000 pieces"
+      ],
+      [
+        "Material",
+        "Clamshell: Paperboard \nTuck-top carton: Corrugated paper"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "5 x 7 x 3 inches"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "sourceCategory": "Burger Box",
+    "image": "brown-burger-photo-1.png",
+    "gallery": [
+      "brown-burger-photo-1.png",
+      "brown-burger-photo-2.png"
+    ],
+    "mergedFrom": [
+      "brown-regular-burger-box",
+      "plain-brown-burger-box"
+    ]
+  },
+  {
+    "id": "fried-chicken-box",
+    "title": "Chicken boxes",
+    "category": "burger",
+    "group": "Chicken boxes",
     "size": null,
     "material": "Cardboard",
     "specifications": [
       [
+        "Options",
+        "Fried / broasted chicken packaging"
+      ],
+      [
         "Minimum Order Quantity",
-        "500 Piece"
+        "Available on request"
       ],
       [
         "Material",
-        "Cardboard"
+        "Cardboard; lining specification on request"
       ],
       [
-        "Capacity",
-        "200 Gram"
+        "Dimensions (L x W x H)",
+        "Available on request"
       ],
       [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#burger-packaging-box"
-    ],
-    "sourceCategory": "Packaging Box",
-    "image": "product-8.jpg",
-    "gallery": [
-      "product-8.jpg",
-      "product-9.jpg",
-      "product-10.jpg",
-      "product-11.jpg",
-      "product-12.jpg"
-    ]
-  },
-  {
-    "id": "pizza-corrugated-printed",
-    "title": "Pizza Corrugated Printed",
-    "category": "pizza",
-    "group": "Printed boxes",
-    "size": "12X12X1.5 Inches",
-    "material": "Corrugated Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
+        "Other Sizes",
+        "Available on request"
       ],
       [
         "Shape",
         "Rectangular"
-      ],
-      [
-        "Material",
-        "Corrugated Paper"
-      ],
-      [
-        "Size",
-        "12X12X1.5 Inches"
-      ],
-      [
-        "Capacity",
-        "Medium"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Color",
-        "Multi Color"
       ]
     ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#pizza-corrugated-printed"
-    ],
-    "sourceCategory": "Packaging Box",
-    "image": "product-13.jpg",
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "sourceCategory": "Printed Corrugated Box",
+    "image": "chicken-box-photo-1.png",
     "gallery": [
-      "product-13.jpg",
-      "product-14.png",
-      "product-15.jpg",
-      "product-16.jpg"
+      "chicken-box-photo-1.png",
+      "chicken-box-photo-2.png"
+    ],
+    "mergedFrom": [
+      "broasted-chicken-box"
     ]
   },
   {
-    "id": "pizza-packaging-corrugated-box",
-    "title": "Pizza Packaging Corrugated Box",
-    "category": "pizza",
-    "group": "Plain boxes",
-    "size": "8X8X1.5 Inches",
-    "material": "Corrugated Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Size",
-        "8X8X1.5 Inches"
-      ],
-      [
-        "Material",
-        "Corrugated Paper"
-      ],
-      [
-        "Board Grade(No. Of Ply)",
-        "Single Wall 3 Ply"
-      ],
-      [
-        "Usage/Applications",
-        "Pizza Pacakging"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Number Of Ply",
-        "Three"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Type of Printing",
-        "Light Weight"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Color",
-        "White"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#pizza-packaging-corrugated-box"
-    ],
-    "sourceCategory": "Packaging Box",
-    "image": "product-17.jpg",
-    "gallery": [
-      "product-17.jpg",
-      "product-18.jpeg",
-      "product-19.jpg",
-      "product-20.jpg",
-      "product-21.jpg"
-    ]
-  },
-  {
-    "id": "food-paper-boat-tray",
-    "title": "Food Paper Boat Tray",
+    "id": "paper-boat-trays",
+    "title": "Paper boat trays",
     "category": "burger",
-    "group": "Trays",
-    "size": null,
-    "material": "kraft paper",
+    "group": "Paper boat trays",
+    "size": "6-inch option; other sizes on request",
+    "material": "Paper / kraft paperboard",
     "specifications": [
       [
+        "Options",
+        "White / Brown kraft / Coated paper"
+      ],
+      [
         "Minimum Order Quantity",
-        "500 Piece"
+        "500 - 1000 pieces"
       ],
       [
         "Material",
-        "kraft paper"
-      ],
-      [
-        "Packaging Size",
-        "500"
-      ],
-      [
-        "Quantity Per Pack",
-        "500"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
+        "Paper / kraft paperboard, depending on option"
       ],
       [
         "Dimensions",
-        "Available sizes need confirmation"
+        "6 inches"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
       ]
     ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#food-paper-boat-tray"
-    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. Pack quantity and minimum order are separate. Confirm the selected material and coating; plastic-free or compostable performance is not established for every option.",
     "sourceCategory": "Packaging Box",
-    "image": "product-22.jpg",
+    "image": "boat-tray-photo-1.png",
     "gallery": [
-      "product-22.jpg",
-      "product-23.jpeg",
-      "product-24.jpeg",
-      "product-25.jpg"
+      "boat-tray-photo-1.png",
+      "boat-tray-photo-2.png",
+      "boat-tray-photo-3.png"
+    ],
+    "mergedFrom": [
+      "food-paper-boat-tray",
+      "disposable-paper-boat-tray",
+      "paper-boat-tray"
+    ]
+  },
+  {
+    "id": "popcorn-and-french-fries-boxes",
+    "title": "Popcorn & fries packaging",
+    "category": "burger",
+    "group": "Popcorn & fries packaging",
+    "size": null,
+    "material": "Paperboard",
+    "specifications": [
+      [
+        "Options",
+        "Fries scoop / Popcorn and snack serving pack"
+      ],
+      [
+        "Minimum Order Quantity",
+        "Available on request"
+      ],
+      [
+        "Material",
+        "Paperboard; confirm grade and coating"
+      ],
+      [
+        "Dimensions",
+        "Available on request for each style"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Open-top scoop / serving pack, depending on option"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. Gallery images show serving-pack options; confirm the style and capacity for your product.",
+    "sourceCategory": "Popcorn Box",
+    "image": "snack-pack-photo-1.png",
+    "gallery": [
+      "snack-pack-photo-1.png",
+      "snack-pack-photo-2.png",
+      "snack-pack-photo-3.png"
     ]
   },
   {
@@ -378,9 +404,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#brownie-packaging-box-supplier-in-bengaluru"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-26.jpg",
     "gallery": [
@@ -431,9 +454,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#plain-white-paper-cake-box-4x4x3"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-29.jpeg",
     "gallery": [
@@ -492,61 +512,11 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#window-cake-boxes"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-32.jpeg",
     "gallery": [
       "product-32.jpeg",
       "product-33.jpg"
-    ]
-  },
-  {
-    "id": "disposable-paper-boat-tray",
-    "title": "Disposable Paper Boat Tray",
-    "category": "burger",
-    "group": "Trays",
-    "size": "6 Inch",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Size",
-        "6 Inch"
-      ],
-      [
-        "Type",
-        "Plastic Coated"
-      ],
-      [
-        "Shape",
-        "Rectangular"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Pack Size",
-        "100 Piece"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#disposable-paper-boat-tray"
-    ],
-    "sourceCategory": "Packaging Box",
-    "image": "product-34.jpeg",
-    "gallery": [
-      "product-34.jpeg"
     ]
   },
   {
@@ -595,9 +565,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#sweet-packaging-box"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-35.jpeg",
     "gallery": [
@@ -623,9 +590,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/packaging-box.html#brownie-packaging-box-manufacture-in-bangalore"
-    ],
     "sourceCategory": "Packaging Box",
     "image": "product-37.jpg",
     "gallery": [
@@ -635,170 +599,284 @@
     ]
   },
   {
-    "id": "chicken-roll-packing-box",
-    "title": "Chicken Roll Packing Box",
+    "id": "roll-shawarma-sleeves",
+    "title": "Roll & shawarma sleeves",
     "category": "rolls",
-    "group": "Roll boxes",
-    "size": "140X190X90 mm",
-    "material": "Cardboard",
+    "group": "Roll & shawarma sleeves",
+    "size": null,
+    "material": "Paperboard / cardboard",
     "specifications": [
       [
-        "Minimum Order Quantity",
-        "1000 Piece"
+        "Options",
+        "Chicken roll / Shawarma / Kati roll sleeves"
       ],
       [
-        "Capacity",
-        "150 gm"
+        "Minimum Order Quantity",
+        "Chicken roll / shawarma listings: 1,000 pieces\nKati roll listing: 500 pieces"
       ],
       [
         "Material",
-        "Cardboard"
+        "Paperboard / cardboard; confirm grade and lining for your chosen option"
       ],
       [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Shape",
-        "Cylindrical"
-      ],
-      [
-        "Design",
-        "Printed"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#chicken-roll-packing-box"
-    ],
-    "sourceCategory": "Corrugated Box",
-    "image": "product-40.jpeg",
-    "gallery": [
-      "product-40.jpeg",
-      "product-41.jpeg",
-      "product-42.jpeg",
-      "product-43.jpeg",
-      "product-44.jpeg",
-      "product-45.jpeg"
-    ]
-  },
-  {
-    "id": "shawarma-roll-packing-box",
-    "title": "Shawarma Roll Packing Box",
-    "category": "rolls",
-    "group": "Roll boxes",
-    "size": "140X190X90 mm",
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Capacity",
-        "150 gm"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Shape",
-        "Cylindrical"
-      ],
-      [
-        "Design",
-        "Printed"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#shawarma-roll-packing-box"
-    ],
-    "sourceCategory": "Corrugated Box",
-    "image": "product-45.jpeg",
-    "gallery": [
-      "product-45.jpeg",
-      "product-44.jpeg",
-      "product-43.jpeg",
-      "product-42.jpeg",
-      "product-41.jpeg",
-      "product-40.jpeg"
-    ]
-  },
-  {
-    "id": "kati-roll-box",
-    "title": "Kati Roll Box",
-    "category": "rolls",
-    "group": "Roll boxes",
-    "size": "140X190X90 mm",
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Capacity",
-        "150 gm"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Shape",
-        "Cylindrical"
-      ],
-      [
-        "Design",
-        "Printed"
+        "Dimensions",
+        "Opening width, depth and overall height available on confirmation"
       ],
       [
         "Paper GSM",
-        "300"
+        "Kati roll listing: 300 GSM\nOther options: Available on request"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Tall open-top sleeve; confirm the opening profile"
       ]
     ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#kati-roll-box"
-    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
     "sourceCategory": "Corrugated Box",
-    "image": "product-46.jpeg",
+    "image": "roll-shawarma-sleeves-photo-1.png",
     "gallery": [
-      "product-46.jpeg",
-      "product-47.jpeg",
-      "product-48.jpeg",
-      "product-49.jpeg",
-      "product-50.jpeg"
+      "roll-shawarma-sleeves-photo-1.png",
+      "roll-shawarma-sleeves-photo-2.png",
+      "roll-shawarma-sleeves-photo-3.png",
+      "roll-shawarma-sleeves-photo-4.png",
+      "roll-shawarma-sleeves-photo-5.png",
+      "roll-shawarma-sleeves-photo-6.png"
+    ],
+    "mergedFrom": [
+      "chicken-roll-packing-box",
+      "shawarma-roll-packing-box",
+      "kati-roll-box"
+    ]
+  },
+  {
+    "id": "noodle-packaging-paper-box",
+    "title": "Noodle boxes",
+    "category": "rolls",
+    "group": "Noodle boxes",
+    "size": null,
+    "material": "Duplex paperboard",
+    "specifications": [
+      [
+        "Options",
+        "Fold-top noodle carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces"
+      ],
+      [
+        "Material",
+        "Duplex paperboard; lining specification on request"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "Available on request"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Tapered carton with folding top"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "sourceCategory": "Noodles Box",
+    "image": "noodle-packaging-paper-box-photo-1.png",
+    "gallery": [
+      "noodle-packaging-paper-box-photo-1.png",
+      "noodle-packaging-paper-box-photo-2.png"
+    ]
+  },
+  {
+    "id": "biryani-packaging-box",
+    "title": "Biryani boxes",
+    "category": "rolls",
+    "group": "Biryani boxes",
+    "size": null,
+    "material": "Paperboard",
+    "specifications": [
+      [
+        "Options",
+        "Printed biryani carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces"
+      ],
+      [
+        "Material",
+        "Paperboard; grade and lining on request"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "Available on request"
+      ],
+      [
+        "Listed Volume",
+        "1,000 ml; confirm usable volume for your selected box"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Rectangular carton shown; confirm base dimensions"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. Confirm the internal dimensions and lining for your food and delivery conditions. The original listing labels the shape square, while the main image shows an elongated carton.",
+    "sourceCategory": "Biryani Packaging Box",
+    "image": "biryani-packaging-box-photo-1.png",
+    "gallery": [
+      "biryani-packaging-box-photo-1.png",
+      "biryani-packaging-box-photo-2.png",
+      "biryani-packaging-box-photo-3.png",
+      "biryani-packaging-box-photo-4.png"
+    ]
+  },
+  {
+    "id": "dosa-boxes",
+    "title": "Dosa boxes",
+    "category": "rolls",
+    "group": "Dosa boxes",
+    "size": null,
+    "material": "Cardboard",
+    "specifications": [
+      [
+        "Options",
+        "Long printed dosa carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "1,000 pieces"
+      ],
+      [
+        "Material",
+        "Cardboard; grade and lining on request"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "Available on request"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Long rectangular carton"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. Share your folded dosa dimensions and any separate chutney or sambar container requirements.",
+    "sourceCategory": "Dosa Box Suppliers",
+    "image": "dosa-boxes-photo-1.png",
+    "gallery": [
+      "dosa-boxes-photo-1.png",
+      "dosa-boxes-photo-2.png",
+      "dosa-boxes-photo-3.png",
+      "dosa-boxes-photo-4.png",
+      "dosa-boxes-photo-5.png",
+      "dosa-boxes-photo-6.png",
+      "dosa-boxes-photo-7.png"
+    ]
+  },
+  {
+    "id": "duplex-sandwich-box",
+    "title": "Sandwich boxes",
+    "category": "rolls",
+    "group": "Sandwich boxes",
+    "size": null,
+    "material": "Duplex paperboard",
+    "specifications": [
+      [
+        "Options",
+        "Triangular sandwich carton"
+      ],
+      [
+        "Minimum Order Quantity",
+        "1,000 pieces"
+      ],
+      [
+        "Material",
+        "Duplex paperboard"
+      ],
+      [
+        "Dimensions",
+        "Base length, height and depth available on confirmation"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Shape",
+        "Triangular wedge carton"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging.",
+    "sourceCategory": "Sandwich Box",
+    "image": "duplex-sandwich-box-photo-1.png",
+    "gallery": [
+      "duplex-sandwich-box-photo-1.png",
+      "duplex-sandwich-box-photo-2.png",
+      "duplex-sandwich-box-photo-3.png",
+      "duplex-sandwich-box-photo-4.png",
+      "duplex-sandwich-box-photo-5.png"
+    ]
+  },
+  {
+    "id": "meal-catering-boxes",
+    "title": "Meal & catering boxes",
+    "category": "rolls",
+    "group": "Meal & catering boxes",
+    "size": null,
+    "material": "Board material on confirmation",
+    "specifications": [
+      [
+        "Options",
+        "Meal-kit outer carton / Handled meal carrier"
+      ],
+      [
+        "Minimum Order Quantity",
+        "500 pieces (original listing; confirm for your selected format)"
+      ],
+      [
+        "Material",
+        "Board grade and finish available on confirmation"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "Available on request for each format"
+      ],
+      [
+        "Included Components",
+        "Confirm whether inserts, trays and cups are supplied with the outer box"
+      ],
+      [
+        "Other Sizes",
+        "Available on request"
+      ],
+      [
+        "Applications",
+        "Catering meals / Iftar meal kits / Corporate meal packs"
+      ],
+      [
+        "Shape",
+        "Rectangular meal carton / handled carrier"
+      ]
+    ],
+    "note": "Have something else in mind or need more customization? Get in touch—we’ll help you find the right packaging. The gallery shows two packaging formats. The open meal kit uses separate trays and cups; five built-in compartments are not confirmed. Choose your format and required components when enquiring.",
+    "sourceCategory": "Food Box",
+    "image": "meal-catering-boxes-photo-1.png",
+    "gallery": [
+      "meal-catering-boxes-photo-1.png",
+      "meal-catering-boxes-photo-2.png"
     ]
   },
   {
@@ -839,9 +917,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#printed-mono-carton-box"
-    ],
     "sourceCategory": "Corrugated Box",
     "image": "product-51.jpg",
     "gallery": [
@@ -893,9 +968,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#cardboard-food-packaging-box"
-    ],
     "sourceCategory": "Corrugated Box",
     "image": "product-55.jpg",
     "gallery": [
@@ -939,9 +1011,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#cupcake-packaging-box-manufacture-in-bangalore"
-    ],
     "sourceCategory": "Corrugated Box",
     "image": "product-59.jpg",
     "gallery": [
@@ -989,9 +1058,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-box.html#pharmaceutical-mono-cartons-packaging-box"
-    ],
     "sourceCategory": "Corrugated Box",
     "image": "product-63.jpg",
     "gallery": [
@@ -999,334 +1065,6 @@
       "product-64.jpg",
       "product-65.jpg",
       "product-66.jpg"
-    ]
-  },
-  {
-    "id": "white-regular-burger-box",
-    "title": "White Regular Burger Box",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": "140X190X90 mm",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Capacity",
-        "50 Gram"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Color",
-        "White"
-      ],
-      [
-        "Material Type",
-        "Paper"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#white-regular-burger-box"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-67.jpg",
-    "gallery": [
-      "product-67.jpg",
-      "product-68.jpeg",
-      "product-69.png",
-      "product-70.jpg",
-      "product-71.jpg"
-    ]
-  },
-  {
-    "id": "brown-regular-burger-box",
-    "title": "Brown Regular Burger Box",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": "140X190X90 mm",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Capacity",
-        "100 Gram"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Material Type",
-        "Paper"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#brown-regular-burger-box"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-72.jpg",
-    "gallery": [
-      "product-72.jpg",
-      "product-73.jpg",
-      "product-74.jpeg",
-      "product-75.jpg",
-      "product-76.png"
-    ]
-  },
-  {
-    "id": "paper-boat-tray",
-    "title": "Paper Boat Tray",
-    "category": "burger",
-    "group": "Trays",
-    "size": null,
-    "material": "Kraft paper board",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Material",
-        "Kraft paper board"
-      ],
-      [
-        "Packaging Size",
-        "500"
-      ],
-      [
-        "Quantity Per Pack",
-        "500"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#paper-boat-tray"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-77.jpeg",
-    "gallery": [
-      "product-77.jpeg",
-      "product-78.jpg",
-      "product-79.jpg"
-    ]
-  },
-  {
-    "id": "plain-brown-burger-box",
-    "title": "Plain Brown Burger Box",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": "165X115X60 mm",
-    "material": "Corrugated Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Material",
-        "Corrugated Paper"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Capacity",
-        "200 Gram"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Size",
-        "165X115X60 mm"
-      ],
-      [
-        "Design",
-        "Plain"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#plain-brown-burger-box"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-80.png",
-    "gallery": [
-      "product-80.png",
-      "product-81.jpeg"
-    ]
-  },
-  {
-    "id": "white-paper-burger-box",
-    "title": "White Paper Burger Box",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": "140X190X90 mm",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Capacity",
-        "100 Gram"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Color",
-        "White"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Material Type",
-        "Paper"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#white-paper-burger-box"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-82.jpg",
-    "gallery": [
-      "product-82.jpg",
-      "product-83.jpeg"
-    ]
-  },
-  {
-    "id": "printed-paper-burger-box",
-    "title": "Printed paper burger box",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": "140X190X90 mm",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Capacity",
-        "100 Gram"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Material Type",
-        "Paper"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/burger-box.html#printed-paper-burger-box",
-      "https://www.preranapackaging.net/burger-box.html#printed-burger-box"
-    ],
-    "sourceCategory": "Burger Box",
-    "image": "product-84.jpeg",
-    "gallery": [
-      "product-84.jpeg",
-      "product-85.jpeg",
-      "product-86.jpg"
-    ],
-    "mergedFrom": [
-      "printed-burger-box"
     ]
   },
   {
@@ -1379,9 +1117,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/printed-corrugated-box.html#printed-corrugated-boxes"
-    ],
     "sourceCategory": "Printed Corrugated Box",
     "image": "product-90.jpeg",
     "gallery": [
@@ -1391,71 +1126,6 @@
       "product-93.jpg",
       "product-94.jpg",
       "product-95.jpeg"
-    ]
-  },
-  {
-    "id": "printed-clamshell-box-burger",
-    "title": "Printed Clamshell Box Burger",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": null,
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "Capacity",
-        "200 Gram"
-      ],
-      [
-        "Folding Carton Style",
-        "One-piece Tuck Top Boxes"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/printed-corrugated-box.html#printed-clamshell-box-burger"
-    ],
-    "sourceCategory": "Printed Corrugated Box",
-    "image": "product-96.jpeg",
-    "gallery": [
-      "product-96.jpeg",
-      "product-97.jpg",
-      "product-98.jpg"
     ]
   },
   {
@@ -1504,70 +1174,11 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/printed-corrugated-box.html#sweet-packaging-box"
-    ],
     "sourceCategory": "Printed Corrugated Box",
     "image": "product-99.jpeg",
     "gallery": [
       "product-99.jpeg",
       "product-36.jpeg"
-    ]
-  },
-  {
-    "id": "fried-chicken-box",
-    "title": "Fried & broasted chicken box",
-    "category": "burger",
-    "group": "Chicken boxes",
-    "size": null,
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Capacity",
-        "500 gm"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/printed-corrugated-box.html#fried-chicken-box",
-      "https://www.preranapackaging.net/paper-cup.html#broasted-chicken-box"
-    ],
-    "sourceCategory": "Printed Corrugated Box",
-    "image": "product-100.jpeg",
-    "gallery": [
-      "product-100.jpeg",
-      "product-101.jpeg"
-    ],
-    "mergedFrom": [
-      "broasted-chicken-box"
     ]
   },
   {
@@ -1608,9 +1219,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/printed-corrugated-box.html#pharmaceutical-mono-carton-boxes"
-    ],
     "sourceCategory": "Printed Corrugated Box",
     "image": "product-102.jpg",
     "gallery": [
@@ -1658,11 +1266,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-box.html#mono-carton-packaging-box",
-      "https://www.preranapackaging.net/corrugated-packaging-box.html#duplex-monocarton-box-manufacture-in-bangalore",
-      "https://www.preranapackaging.net/corrugated-packaging-box.html#duplex-monocarton-box"
-    ],
     "sourceCategory": "Paper Box",
     "image": "product-106.jpg",
     "gallery": [
@@ -1715,9 +1318,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-box.html#printed-mono-carton"
-    ],
     "sourceCategory": "Paper Box",
     "image": "product-109.jpg",
     "gallery": [
@@ -1783,9 +1383,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/paper-box.html#window-cake-boxes"
-    ],
     "sourceCategory": "Paper Box",
     "image": "product-115.jpeg",
     "gallery": [
@@ -1828,9 +1425,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/paper-box.html#brownie-packaging-box-manufacturer"
-    ],
     "sourceCategory": "Paper Box",
     "image": "product-118.jpg",
     "gallery": [
@@ -1881,9 +1475,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-packaging-box.html#cardboard-food-packing-box-in-bengaluru"
-    ],
     "sourceCategory": "Corrugated Packaging Box",
     "image": "product-58.jpg",
     "gallery": [
@@ -1911,9 +1502,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-packaging-box.html#mono-carton-box"
-    ],
     "sourceCategory": "Corrugated Packaging Box",
     "image": "product-130.jpg",
     "gallery": [
@@ -1960,9 +1548,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-packaging-boxes-and-packaging-boxes.html#cardboard-packaging-box-food"
-    ],
     "sourceCategory": "Corrugated Packaging Boxes And Packaging Boxes",
     "image": "product-133.jpg",
     "gallery": [
@@ -2005,9 +1590,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/corrugated-packaging-boxes-and-packaging-boxes.html#brownie-packaging-box"
-    ],
     "sourceCategory": "Corrugated Packaging Boxes And Packaging Boxes",
     "image": "product-140.jpg",
     "gallery": [
@@ -2051,9 +1633,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-container.html#disposable-paper-container"
-    ],
     "sourceCategory": "Paper Container",
     "image": "product-144.jpeg",
     "gallery": [
@@ -2093,9 +1672,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/paper-container.html#kraft-food-containers"
-    ],
     "sourceCategory": "Paper Container",
     "image": "product-148.jpeg",
     "gallery": [
@@ -2123,9 +1699,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-container.html#paper-food-container-manufacturer"
-    ],
     "sourceCategory": "Paper Container",
     "image": "product-148.jpeg",
     "gallery": [
@@ -2173,9 +1746,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/clamshell-boxes.html#eco-friendly-clamshell-box"
-    ],
     "sourceCategory": "Clamshell Boxes",
     "image": "product-155.jpeg",
     "gallery": [
@@ -2241,9 +1811,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/clamshell-boxes.html#sugarcane-bagasse-burger-boxes"
-    ],
     "sourceCategory": "Clamshell Boxes",
     "image": "product-157.jpeg",
     "gallery": [
@@ -2284,9 +1851,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/disposable-paper-food-containers.html#disposable-paper-food-containers"
-    ],
     "sourceCategory": "Disposable Paper Food Containers",
     "image": "product-162.jpg",
     "gallery": [
@@ -2322,9 +1886,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/disposable-paper-food-containers.html#food-grade-paper-containers"
-    ],
     "sourceCategory": "Disposable Paper Food Containers",
     "image": "product-166.jpeg",
     "gallery": [
@@ -2363,9 +1924,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/paper-cup.html#paper-food-container"
-    ],
     "sourceCategory": "Paper Cup",
     "image": "product-144.jpeg",
     "gallery": [
@@ -2373,60 +1931,6 @@
       "product-169.jpg",
       "product-170.jpg",
       "product-171.jpg"
-    ]
-  },
-  {
-    "id": "plain-pizza-packaging-box",
-    "title": "Plain Pizza Packaging Box",
-    "category": "pizza",
-    "group": "Plain boxes",
-    "size": "9X9X1.5 Inches",
-    "material": "Corrugated Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Shape",
-        "Rectangular"
-      ],
-      [
-        "Material",
-        "Corrugated Paper"
-      ],
-      [
-        "Size",
-        "9X9X1.5 Inches"
-      ],
-      [
-        "Capacity",
-        "Large"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Color",
-        "Multi Color"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/pizza-packaging-box.html#plain-pizza-packaging-box"
-    ],
-    "sourceCategory": "Pizza Packaging Box",
-    "image": "product-172.jpg",
-    "gallery": [
-      "product-172.jpg",
-      "product-173.jpg",
-      "product-16.jpg",
-      "product-15.jpg"
     ]
   },
   {
@@ -2471,222 +1975,12 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-food-box.html#paper-food-boxes"
-    ],
     "sourceCategory": "Paper Food Box",
     "image": "product-174.png",
     "gallery": [
       "product-174.png",
       "product-175.jpg",
       "product-176.jpg"
-    ]
-  },
-  {
-    "id": "noodle-packaging-paper-box",
-    "title": "Noodle Packaging Paper Box",
-    "category": "rolls",
-    "group": "Meal boxes",
-    "size": null,
-    "material": "Duplex Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Duplex Paper"
-      ],
-      [
-        "Capacity",
-        "200 Gram"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/noodles-box.html#noodle-packaging-paper-box"
-    ],
-    "sourceCategory": "Noodles Box",
-    "image": "product-177.jpg",
-    "gallery": [
-      "product-177.jpg",
-      "product-178.jpg",
-      "product-179.jpeg"
-    ]
-  },
-  {
-    "id": "dosa-box-manufacturers",
-    "title": "Dosa box",
-    "category": "rolls",
-    "group": "Meal boxes",
-    "size": null,
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/dosa-box-suppliers.html#dosa-box-manufacturers"
-    ],
-    "sourceCategory": "Dosa Box Suppliers",
-    "image": "product-180.jpeg",
-    "gallery": [
-      "product-180.jpeg",
-      "product-181.jpeg",
-      "product-182.jpeg",
-      "product-183.jpeg",
-      "product-184.jpg",
-      "product-185.jpg",
-      "product-186.jpg"
-    ]
-  },
-  {
-    "id": "biryani-packaging-box",
-    "title": "Biryani Packaging Box",
-    "category": "rolls",
-    "group": "Meal boxes",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Capacity",
-        "1000 ml"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/biryani-packaging-box.html#biryani-packaging-box"
-    ],
-    "sourceCategory": "Biryani Packaging Box",
-    "image": "product-187.jpeg",
-    "gallery": [
-      "product-187.jpeg",
-      "product-188.jpg",
-      "product-189.jpg",
-      "product-190.jpeg"
-    ]
-  },
-  {
-    "id": "popcorn-and-french-fries-boxes",
-    "title": "Popcorn And French Fries Boxes",
-    "category": "burger",
-    "group": "Popcorn & fries",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Capacity",
-        "500 gm"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Property",
-        "Disposable"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Colour",
-        "Multicolour"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/popcorn-box.html#popcorn-and-french-fries-boxes"
-    ],
-    "sourceCategory": "Popcorn Box",
-    "image": "product-191.jpg",
-    "gallery": [
-      "product-191.jpg",
-      "product-192.jpg",
-      "product-193.jpg",
-      "product-194.jpg",
-      "product-195.jpg"
     ]
   },
   {
@@ -2723,9 +2017,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/eco-friendly-disposable-boxes.html#eco-friendly-disposable-paper-boxes"
-    ],
     "sourceCategory": "Eco Friendly Disposable Boxes",
     "image": "product-196.jpg",
     "gallery": [
@@ -2776,9 +2067,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/mono-carton-packaging-box.html#mano-cartoon-box-manufacture-in-bangalore"
-    ],
     "sourceCategory": "Mono Carton Packaging Box",
     "image": "product-199.jpg",
     "gallery": [
@@ -2829,9 +2117,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/cake-packaging-box.html#plum-cake-box"
-    ],
     "sourceCategory": "Cake Packaging Box",
     "image": "product-202.jpg",
     "gallery": [
@@ -2870,9 +2155,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/aluminum-foil-container.html#biodegradable-sugarcane-bagasse-container"
-    ],
     "sourceCategory": "Aluminum Foil Container",
     "image": "product-205.jpeg",
     "gallery": [
@@ -2918,10 +2200,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/cupcake-boxes.html#cupcake-packaging-box",
-      "https://www.preranapackaging.net/food-packaging-box.html#packaging-box-for-cupcakes"
-    ],
     "sourceCategory": "Cupcake Boxes",
     "image": "product-211.jpg",
     "gallery": [
@@ -2935,182 +2213,6 @@
     ],
     "mergedFrom": [
       "packaging-box-for-cupcakes"
-    ]
-  },
-  {
-    "id": "duplex-sandwich-box",
-    "title": "Duplex Sandwich Box",
-    "category": "rolls",
-    "group": "Sandwich boxes",
-    "size": "140X190X90 mm",
-    "material": "Duplex",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "1000 Piece"
-      ],
-      [
-        "Size",
-        "140X190X90 mm"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Usage",
-        "Sandwich Packaging"
-      ],
-      [
-        "Material Type",
-        "Duplex"
-      ],
-      [
-        "Box Capacity",
-        "250g"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/sandwich-box.html#duplex-sandwich-box"
-    ],
-    "sourceCategory": "Sandwich Box",
-    "image": "product-214.jpg",
-    "gallery": [
-      "product-214.jpg",
-      "product-215.jpg",
-      "product-216.jpg",
-      "product-217.jpeg",
-      "product-218.jpeg",
-      "product-219.jpg"
-    ]
-  },
-  {
-    "id": "iftar-box-manufactuer",
-    "title": "Iftar box",
-    "category": "rolls",
-    "group": "Meal boxes",
-    "size": null,
-    "material": null,
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Usage/ Application",
-        "Food Packaging"
-      ],
-      [
-        "Capacity",
-        "1000 gm"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "No. Of Compartments",
-        "Five"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Color",
-        "White"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/food-box.html#iftar-box-manufactuer"
-    ],
-    "sourceCategory": "Food Box",
-    "image": "product-224.jpg",
-    "gallery": [
-      "product-224.jpg",
-      "product-225.jpg"
-    ]
-  },
-  {
-    "id": "printed-burger-packaging-boxes",
-    "title": "Printed Burger Packaging Boxes",
-    "category": "burger",
-    "group": "Burger boxes",
-    "size": null,
-    "material": "Cardboard",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Cardboard"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Capacity",
-        "200 Gram"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "No. Of Compartments",
-        "One"
-      ],
-      [
-        "Color",
-        "Multicolour"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/food-packaging-material.html#printed-burger-packaging-boxes"
-    ],
-    "sourceCategory": "Food Packaging Material",
-    "image": "product-226.jpeg",
-    "gallery": [
-      "product-226.jpeg",
-      "product-227.jpg"
     ]
   },
   {
@@ -3147,9 +2249,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/paper-food-packaging-container.html#750-ml-food-packaging-container"
-    ],
     "sourceCategory": "Paper Food Packaging Container",
     "image": "product-228.jpg",
     "gallery": [
@@ -3188,9 +2287,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/paper-food-container.html#biodegradable-container"
-    ],
     "sourceCategory": "Paper Food Container",
     "image": "product-144.jpeg",
     "gallery": [
@@ -3198,108 +2294,6 @@
       "product-231.jpg",
       "product-232.jpg",
       "product-233.jpg"
-    ]
-  },
-  {
-    "id": "printed-pizza-box",
-    "title": "Printed Pizza Box",
-    "category": "pizza",
-    "group": "Printed boxes",
-    "size": "7.5",
-    "material": "BROWN",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Size (in Inch)",
-        "7.5"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Ply Count",
-        "3 Ply"
-      ],
-      [
-        "Paper Type",
-        "BROWN"
-      ],
-      [
-        "Print & Branding",
-        "Custom Logo Print"
-      ],
-      [
-        "Lamination",
-        "No Lamination"
-      ],
-      [
-        "Food Grade Certified",
-        "Yes"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#printed-pizza-box"
-    ],
-    "sourceCategory": "New Items",
-    "image": "product-234.jpeg",
-    "gallery": [
-      "product-234.jpeg",
-      "product-235.jpeg",
-      "product-236.jpeg"
-    ]
-  },
-  {
-    "id": "corrugated-pizza-packaging-box",
-    "title": "Corrugated Pizza Packaging Box",
-    "category": "pizza",
-    "group": "Other styles",
-    "size": "8 inch",
-    "material": "printed",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Size (in Inch)",
-        "8 inch"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Paper Type",
-        "printed"
-      ],
-      [
-        "Print & Branding",
-        "Custom Logo Print"
-      ],
-      [
-        "Lamination",
-        "Inner Lamination"
-      ],
-      [
-        "Food Grade Certified",
-        "Yes"
-      ]
-    ],
-    "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#corrugated-pizza-packaging-box"
-    ],
-    "sourceCategory": "New Items",
-    "image": "product-237.jpeg",
-    "gallery": [
-      "product-237.jpeg",
-      "product-238.jpeg",
-      "product-239.jpeg"
     ]
   },
   {
@@ -3352,9 +2346,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#window-cake-boxes"
-    ],
     "sourceCategory": "New Items",
     "image": "product-240.jpeg",
     "gallery": [
@@ -3379,9 +2370,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#cake-box-with-window"
-    ],
     "sourceCategory": "New Items",
     "image": "product-241.jpeg",
     "gallery": [
@@ -3406,9 +2394,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#window-cake-boxes"
-    ],
     "sourceCategory": "New Items",
     "image": "product-242.jpeg",
     "gallery": [
@@ -3433,9 +2418,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#window-cake-boxes"
-    ],
     "sourceCategory": "New Items",
     "image": "product-243.jpeg",
     "gallery": [
@@ -3460,9 +2442,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#window-cake-boxes"
-    ],
     "sourceCategory": "New Items",
     "image": "product-244.jpeg",
     "gallery": [
@@ -3487,9 +2466,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#window-cake-boxes"
-    ],
     "sourceCategory": "New Items",
     "image": "product-245.jpeg",
     "gallery": [
@@ -3546,9 +2522,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#valentines-day-gift-bag"
-    ],
     "sourceCategory": "New Items",
     "image": "product-246.jpeg",
     "gallery": [
@@ -3615,9 +2588,6 @@
       ]
     ],
     "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#valentines-day-gift-bag-medium"
-    ],
     "sourceCategory": "New Items",
     "image": "product-249.jpeg",
     "gallery": [
@@ -3676,9 +2646,6 @@
       ]
     ],
     "note": "",
-    "sources": [
-      "https://www.preranapackaging.net/new-items.html#brownie-packaging-box"
-    ],
     "sourceCategory": "New Items",
     "image": "product-252.jpg",
     "gallery": [

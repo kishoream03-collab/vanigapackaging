@@ -5,7 +5,7 @@ export const site = {
   email: 'info@vanigapackaging.com',
   addressLines: ['Chennai', 'India'],
   mapsHref:
-    'https://www.google.com/maps/search/?api=1&query=Chennai+India',
+    'https://www.google.com/maps/search/?api=1&query=12.912517%2C80.160026',
 };
 
 export const nav = [

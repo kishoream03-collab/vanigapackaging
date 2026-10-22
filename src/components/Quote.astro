@@ -7,9 +7,11 @@ import pizzas from '../data/pizzas.json';
 import packaging from '../data/packaging.json';
 import productRedirects from '../data/product-redirects.json';
 import cakeRedirects from '../data/cake-redirects.json';
+import pizzaRedirects from '../data/pizza-redirects.json';
+const pizzaAliases = Object.fromEntries(Object.entries(pizzaRedirects).map(([oldId, target]) => [oldId, target.split('/').filter(Boolean).pop()]));
 import {collections} from '../data/collections';
 
-const endpoint = import.meta.env.PUBLIC_QUOTE_ENDPOINT ?? '';
+const endpoint = import.meta.env.PUBLIC_QUOTE_ENDPOINT?.trim() || '/api/quote.php';
 const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 – 25,000'], ['25kplus', '25,000+']];
 ---
 <section id="quote" class="section quote dotted">
@@ -34,7 +36,9 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 �
     </div>
   </div>
 
-  <form class="form" id="quote-form" data-endpoint={endpoint} data-product-aliases={JSON.stringify({...productRedirects,...cakeRedirects})} novalidate>
+  <form class="form" id="quote-form" data-endpoint={endpoint} data-product-aliases={JSON.stringify({...productRedirects,...cakeRedirects,...pizzaAliases})} novalidate>
+    <input type="hidden" name="_subject" value="New quote request — Vaniga Packaging" />
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
     <div class="form-head"><h3>Request a quote</h3><span>TAKES A MINUTE</span></div>
     <div class="fields">
       <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" placeholder="Full name" autocomplete="name" required /></div>
@@ -101,18 +105,28 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 �
       return;
     }
 
+    if (submit?.disabled) return;
     if (submit) submit.disabled = true;
     try {
+      const data = new FormData(form);
+      for (const name of ['product', 'quantity']) {
+        const select = form.elements.namedItem(name) as HTMLSelectElement;
+        data.set(name, select.value ? select.selectedOptions[0].text : 'Not specified');
+      }
+      data.set('print_logo', (form.elements.namedItem('print_logo') as HTMLInputElement).checked ? 'Yes' : 'No');
       const res = await fetch(endpoint, {
         method: 'POST',
         headers: { Accept: 'application/json' },
-        body: new FormData(form),
+        body: data,
       });
-      if (!res.ok) throw new Error(String(res.status));
+      const result = await res.json();
+      if (!res.ok || result.ok === false) throw new Error(result.message || 'Unable to send your request.');
       form.reset();
       show('ok', "Thanks — we've got your request and will reply by phone or email.");
-    } catch {
-      show('err', 'Something went wrong sending that. Please try again, or call +91-789-283-8275.');
+    } catch (error) {
+      show('err', error instanceof Error && !error.message.includes('JSON') && error.message !== 'Failed to fetch'
+        ? error.message
+        : 'Something went wrong sending that. Please try again, or call +91-789-283-8275.');
     } finally {
       if (submit) submit.disabled = false;
     }

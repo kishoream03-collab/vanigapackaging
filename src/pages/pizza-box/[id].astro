@@ -19,7 +19,7 @@ const related = pizzas.filter(p => p.id !== pizza.id).sort((a, b) => Number(b.gr
     <nav class="cake-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/pizza-box.html">Pizza boxes</a><span>/</span><span>{pizza.title}</span></nav>
     <a class="cake-back" href="/pizza-box.html">← Back to pizza boxes</a>
     <div class="cake-detail">
-      <ProductCarousel title={pizza.title} images={[pizza.image, ...gallery]} folder="pizza" />
+      <ProductCarousel title={pizza.title} images={[pizza.image, ...gallery]} folder="pizza" interactive={['brown-corrugated-pizza-boxes', 'printed-pizza-boxes', 'white-pizza-boxes'].includes(pizza.id)} />
       <div><div class="eyebrow">{pizza.group}</div><h1>{pizza.title}</h1><p>{pizza.description ?? 'Choose your quantity and tell us about your branding requirements. We’ll help you confirm the right size, finish and price.'}</p><dl>{specs.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl>{pizza.note && <p class="cake-note">{pizza.note}</p>}<p>Price on request</p><a href={quote} class="btn btn-accent">Get a quote for this box <Icon name="arrow" /></a></div>
     </div>
     <section class="cake-related" aria-labelledby="related-heading"><h2 id="related-heading">More boxes to explore</h2><div class="cake-related-grid">{related.map(product => <a href={`/pizza-box/${product.id}/`} class="cake-related-link"><div class="cake-photo"><img src={`/images/pizza/${product.image}`} alt={product.title} width="250" height="250" loading="lazy" /></div><h3>{product.title}</h3><span>View product <Icon name="arrow" size={16} /></span></a>)}</div></section>

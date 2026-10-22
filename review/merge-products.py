@@ -1,4 +1,4 @@
-"""Consolidate verified catalogue groups; preserve distinct photos and sources."""
+"""Consolidate verified catalogue groups; preserve distinct photos."""
 import json,hashlib
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
@@ -17,7 +17,6 @@ for keep,removed,title in groups:
  members=[p for p in products if p['id'] in [keep,*removed]];target=next(p for p in members if p['id']==keep)
  target['title']=title
  target['mergedFrom']=list(dict.fromkeys(target.get('mergedFrom',[])+[p['id'] for p in members if p['id']!=keep]))
- target['sources']=list(dict.fromkeys(s for p in members for s in p['sources']))
  seen=set();gallery=[]
  for p in members:
   for name in p['gallery']:
