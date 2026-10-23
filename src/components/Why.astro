@@ -33,10 +33,40 @@ const cards = [
     <span class="kraft">CHENNAI, INDIA</span>
   </div>
 
-  <div id="industries" class="industries">
-    <div class="industries-head"><h3>Who we pack for</h3><span class="eyebrow">BAKERIES TO BRANDS</span></div>
-    <ul class="tags">
-      {industries.map((i) => <li class={`tag ${i.tone}`}>{i.label}</li>)}
+  <div id="industries" class="industries" aria-labelledby="industries-title">
+    <div class="industries-head"><h3 id="industries-title">Packaging for your business</h3><p>Find packaging for what you sell.</p></div>
+    <ul class="industry-grid">
+      {industries.map((industry, index) => <li><a class="industry-card" href={industry.href}>
+        <div class="industry-card-top"><span class="industry-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span class="industry-arrow" aria-hidden="true"><Icon name="arrow-up-right" size={20}/></span></div>
+        <div class="industry-card-copy"><h4>{industry.label}</h4><p>{industry.description}</p></div>
+        <span class="industry-explore">Explore packaging <span aria-hidden="true">→</span></span>
+      </a></li>)}
     </ul>
   </div>
 </section>
+
+<style>
+  .industries-head > p { color:var(--muted);font-size:15px;line-height:1.5; }
+  .industry-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px;margin:0;padding:0;list-style:none; }
+  .industry-card { position:relative;display:flex;flex-direction:column;gap:24px;min-height:248px;height:100%;padding:26px;background:linear-gradient(135deg,#fffcf6,#f2e9da);border:1px solid #ded4c3;border-radius:22px;color:var(--ink);text-decoration:none;box-shadow:0 3px 0 rgba(25,24,20,.025);transition:transform 220ms ease,box-shadow 220ms ease,background-color 220ms ease,border-color 220ms ease; }
+  .industry-card-top { display:flex;align-items:center;justify-content:space-between;gap:16px; }
+  .industry-number { font:500 13px var(--mono);letter-spacing:.12em;color:var(--accent-dark); }
+  .industry-number::after { content:'';display:inline-block;width:28px;height:1px;background:currentColor;vertical-align:middle;margin-left:12px;opacity:.45; }
+  .industry-arrow { display:flex;align-items:center;justify-content:center;width:38px;height:38px;flex-shrink:0;border:1px solid #d8cbb7;border-radius:50%;color:var(--accent-dark);background:rgba(255,252,246,.65);transition:transform 220ms ease,background-color 220ms ease; }
+  .industry-arrow :global(svg) { display:block; }
+  .industry-card-copy { flex:1; }
+  .industry-card h4 { margin:0;font:600 24px/1.15 var(--display);letter-spacing:-.025em;max-width:300px; }
+  .industry-card p { margin:12px 0 0;font-size:14px;line-height:1.6;color:var(--muted); }
+  .industry-explore { display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:16px;border-top:1px solid rgba(25,24,20,.12);font-size:12px;font-weight:600;letter-spacing:.025em;color:var(--accent-dark); }
+  .industry-explore > span { font-size:18px;transition:transform 220ms ease; }
+  .industry-card:is(:hover,:focus-visible) { background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:0 12px 28px rgba(25,24,20,.12);transform:translateY(-4px); }
+  .industry-card:is(:hover,:focus-visible) p { color:#d6cdbc; }
+  .industry-card:is(:hover,:focus-visible) .industry-number { color:var(--kraft); }
+  .industry-card:is(:hover,:focus-visible) .industry-arrow { background:var(--accent);color:var(--card);border-color:var(--accent);transform:rotate(5deg); }
+  .industry-card:is(:hover,:focus-visible) .industry-explore { color:var(--kraft);border-color:rgba(244,238,227,.2); }
+  .industry-card:is(:hover,:focus-visible) .industry-explore > span { transform:translateX(3px); }
+  .industry-card:focus-visible { outline:2px solid var(--accent);outline-offset:4px; }
+  @media(max-width:1000px) { .industry-grid {grid-template-columns:repeat(2,minmax(0,1fr));} }
+  @media(max-width:600px) { .industry-grid {grid-template-columns:1fr;gap:14px;}.industry-card {min-height:230px;padding:22px;gap:20px;}.industry-card h4 {font-size:23px;} }
+  @media(prefers-reduced-motion:reduce) { .industry-card,.industry-arrow,.industry-explore > span {transition:none;}.industry-card:is(:hover,:focus-visible),.industry-card:is(:hover,:focus-visible) .industry-arrow,.industry-card:is(:hover,:focus-visible) .industry-explore > span {transform:none;} }
+</style>

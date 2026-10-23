@@ -1,0 +1,13 @@
+{
+  "mode": "built-in image_gen",
+  "white": {
+    "reference": "public/images/packaging/product-228.webp",
+    "output": "public/images/packaging/paper-container-white-3d.webp",
+    "prompt": "Use case: product-mockup. Recreate the reference white round food container as a polished photorealistic 3D studio product render for a packaging catalogue. Preserve its tapered cylindrical white tub construction and matching flat white lid with fine ribbed rim; no handles, branding, writing or added parts. Single closed tub, centered three-quarter view slightly from above, fully visible with generous margins, square composition. Warm off-white seamless background, soft realistic contact shadow, subtle paper surface, crisp edges, premium soft studio lighting. No text, logos, watermark, dimensions or props."
+  },
+  "kraft": {
+    "reference": "public/images/packaging/product-162.webp",
+    "output": "public/images/packaging/kraft-container-bowls-3d.webp",
+    "prompt": "Use case: product-mockup. Recreate this reference kraft round food bowl arrangement as a polished photorealistic 3D studio product render for a packaging catalogue. Preserve round tapered brown kraft paper bowls, rolled rims and clear flat plastic lids. Two neatly nested stacks behind; in front one closed bowl with clear lid beside one open bowl containing salad, sliced protein and a half boiled egg, as in reference. Fully visible arrangement, centered with generous margins, square composition and three-quarter camera slightly above. Warm off-white seamless background, realistic soft contact shadows, warm natural kraft paper texture, crisp geometry, premium soft studio lighting. No text, logos, watermarks, dimensions, cutlery or extra props."
+  }
+}

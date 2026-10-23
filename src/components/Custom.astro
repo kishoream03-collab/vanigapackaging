@@ -1,19 +1,65 @@
 ---
 import Icon from './Icon.astro';
-import Dieline from './Dieline.astro';
 import { steps } from '../data/site';
+import pizzas from '../data/pizzas.json';
+import packaging from '../data/packaging.json';
+const pizza = pizzas.find(p => p.id === 'printed-pizza-boxes')!;
+const burger = packaging.find(p => p.id === 'printed-burger-boxes')!;
+const pharma = packaging.find(p => p.id === 'pharmaceutical-cartons')!;
+const examples = [
+  { title: 'Printed pizza boxes', src: `/images/pizza/${pizza.image}`, href: `/pizza-box/${pizza.id}/` },
+  { title: 'Printed burger boxes', src: `/images/packaging/${burger.image}`, href: `/products/${burger.id}/` },
+  { title: 'Pharmaceutical cartons', src: `/images/packaging/${pharma.image}`, href: `/products/${pharma.id}/` },
+];
 ---
-<section id="custom" class="section custom">
+<section id="custom" class="section custom" aria-labelledby="custom-title">
   <div class="custom-copy">
     <div class="eyebrow">02 — CUSTOM PRINTING</div>
-    <h2 class="h2">Your brand on every box that leaves the kitchen.</h2>
-    <p class="custom-lede">Send us your logo and box size. We coordinate printing with our manufacturing partners on the style that suits your product, so every delivery doubles as advertising.</p>
+    <h2 id="custom-title" class="h2">Your packaging.<br/>Printed with your brand.</h2>
+    <p class="custom-lede">Share your logo, packaging style, dimensions and quantity. We’ll help you choose suitable material and printing options, then coordinate artwork approval and production.</p>
     <ol class="steps">
-      {steps.map(([t, d], i) => (
-        <li><span class="n">{String(i + 1).padStart(2, '0')}</span><div><b>{t}</b><span>{d}</span></div></li>
+      {steps.map(([title, description], i) => (
+        <li><span class="n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><div><b>{title}</b><span>{description}</span></div></li>
       ))}
     </ol>
-    <a href="#quote" class="btn btn-accent">Start a custom order <Icon name="arrow" /></a>
+    <a href="#quote" class="btn btn-accent">Discuss custom printing <Icon name="arrow" /></a>
   </div>
-  <div class="dieline-wrap dotted"><Dieline /></div>
+  <div class="custom-examples">
+    <div class="custom-samples">
+      {examples.map(example => (
+        <a class="custom-sample" href={example.href}>
+          <figure>
+            <img src={example.src} alt={example.title} width="1000" height="1000" loading="lazy" />
+            <figcaption>{example.title}<Icon name="arrow-up-right" size={16}/></figcaption>
+          </figure>
+        </a>
+      ))}
+    </div>
+    <p class="sample-note">Illustrative renders from our packaging catalogue. Printing options vary by material and format.</p>
+  </div>
 </section>
+<style>
+  .custom { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);background:var(--sand);color:var(--ink);align-items:center; }
+  .custom .eyebrow { color:var(--accent-dark); }
+  .custom h2 { font-size:clamp(34px,3.6vw,54px);line-height:1.08;margin-top:20px; }
+  .custom-lede { color:var(--muted);font-size:17px;line-height:1.65;margin-top:22px;max-width:540px; }
+  .steps { margin-top:28px;border:0; }
+  .steps li { padding:15px 0;border-color:rgba(25,24,20,.14);gap:14px; }
+  .steps .n { background:transparent;color:var(--accent-dark);border-radius:0;width:28px;height:auto;margin-top:2px; }
+  .steps b { font-size:16px; }
+  .steps div > span { color:var(--muted);font-size:14px; }
+  .custom .btn { margin-top:24px; }
+  .custom-examples { min-width:0; }
+  .custom-samples { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px; }
+  .custom-sample { display:block;min-width:0;background:var(--card);border:1px solid rgba(25,24,20,.08);border-radius:16px;text-decoration:none;overflow:hidden; }
+  .custom-sample:first-child { grid-column:1 / -1; }
+  .custom-sample figure { margin:0; }
+  .custom-sample img { display:block;width:100%;height:190px;object-fit:contain;padding:14px; }
+  .custom-sample:first-child img { height:230px; }
+  .custom-sample figcaption { display:flex;justify-content:space-between;align-items:center;gap:8px;padding:14px 16px;border-top:1px solid var(--line);font-size:14px;line-height:1.4; }
+  .custom-sample figcaption :global(svg) { flex-shrink:0; }
+  .custom-sample:hover, .custom-sample:focus-visible { border-color:var(--accent); }
+  .sample-note { color:var(--muted);font-size:12px;line-height:1.6;margin-top:12px; }
+  @media(max-width:1000px) { .custom { grid-template-columns:1fr;gap:32px; }.custom-examples { width:100%;max-width:640px;justify-self:center; }.custom-lede {max-width:680px;} }
+  @media(max-width:440px) { .custom-samples { gap:10px; }.custom-sample img {height:150px;padding:10px;}.custom-sample:first-child img {height:200px;}.custom-sample figcaption {padding:12px;font-size:13px;}.custom .btn {align-self:stretch;} }
+</style>

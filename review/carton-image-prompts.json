@@ -1,0 +1,42 @@
+{
+  "mode": "built-in image_gen",
+  "outputDirectory": "public/images/packaging",
+  "images": [
+    {
+      "key": "mono-closed",
+      "reference": 130,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show three plain white folding paperboard mono cartons in different rectangular proportions, two upright and one lying horizontally. All closed tuck-end cartons. Thin smooth paperboard, no corrugated edges or shipping flaps. Three-quarter elevated view. Use only the small folding-carton construction visible in the reference.",
+      "output": "carton-mono-closed-3d.webp"
+    },
+    {
+      "key": "mono-open",
+      "reference": 130,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show one upright plain white folding paperboard mono carton with its top tuck flap and two dust flaps open to reveal the empty interior, and one matching closed carton alongside. Thin smooth paperboard, no corrugated edges. Three-quarter elevated view. Use only the folding-carton construction visible in the reference, no mailers or shipping cartons.",
+      "output": "carton-mono-open-3d.webp"
+    },
+    {
+      "key": "pharma-tall",
+      "reference": 63,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show an arrangement of three empty outer pharmaceutical folding cartons: one tall slim upright rectangular carton and two shorter rectangular cartons, one horizontal. Closed white paperboard tuck-end construction. Restrained abstract blue and teal geometric panels suggest custom printing but absolutely no text or medical claims. Packaging only, no contents.",
+      "output": "carton-pharma-tall-3d.webp"
+    },
+    {
+      "key": "pharma-flat",
+      "reference": 64,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show two slim wide rectangular outer pharmaceutical paperboard cartons, one closed standing slightly behind and one lying horizontally with one tuck flap open, empty inside. White paperboard with restrained abstract blue and muted violet geometric colour panels, no text or medical claims. Keep the thin wide rectangular box format of the reference.",
+      "output": "carton-pharma-flat-3d.webp"
+    },
+    {
+      "key": "mailer-open",
+      "reference": 51,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show one open rectangular corrugated roll-end tuck-front mailer with hinged lid and side wings, plus one matching closed mailer slightly behind. Plain natural brown kraft exterior and interior, visible subtle fluted board edges, no graphics. Three-quarter elevated view, objects sit on surface.",
+      "output": "carton-mailer-open-3d.webp"
+    },
+    {
+      "key": "mailer-closed",
+      "reference": 132,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D packaging catalogue render. Warm off-white seamless studio background, soft contact shadows, consistent diffuse lighting, crisp realistic folds, centered composition with generous margins, entire objects visible. Square image. No food, medicines, bottles, props, brands, logos, lettering, watermark, dimensions, badges or certification symbols. Preserve the relevant reference construction, not its text or promotional artwork. Show one closed natural brown kraft corrugated tuck-front mailer prominently in front, and a matching open empty mailer behind to the right. Preserve the self-locking side-wing hinged mailer construction from reference. Subtle realistic corrugated edges and paper grain. Three-quarter view from above. Remove the reference brand entirely.",
+      "output": "carton-mailer-closed-3d.webp"
+    }
+  ]
+}

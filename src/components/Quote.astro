@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import Logo from './Logo.astro';
 import countries from '../../public/api/countries.json';
 import { site } from '../data/site';
 import { products, extraQuoteOptions } from '../data/products';
@@ -7,6 +8,7 @@ import cakes from '../data/cakes';
 import pizzas from '../data/pizzas.json';
 import packaging from '../data/packaging.json';
 import productRedirects from '../data/product-redirects.json';
+import containerVariants from '../data/container-variants.json';
 import cakeRedirects from '../data/cake-redirects.json';
 import pizzaRedirects from '../data/pizza-redirects.json';
 const pizzaAliases = Object.fromEntries(Object.entries(pizzaRedirects).map(([oldId, target]) => [oldId, target.split('/').filter(Boolean).pop()]));
@@ -15,7 +17,7 @@ import {collections} from '../data/collections';
 const endpoint = import.meta.env.PUBLIC_QUOTE_ENDPOINT?.trim() || '/api/quote.php';
 const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 – 25,000'], ['25kplus', '25,000+']];
 ---
-<section id="quote" class="section quote dotted">
+<section id="quote" class="section quote">
   <div class="quote-copy">
     <div class="eyebrow">04 — GET A QUOTE</div>
     <h2>Tell us what you're packing.</h2>
@@ -23,7 +25,7 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 �
 
     <div class="contact">
       <div class="who">
-        <div class="avatar" aria-hidden="true">GB</div>
+        <div class="avatar" aria-hidden="true"><Logo size={40}/></div>
         <div><b>Kishore Kumar</b><span>Proprietor, Vaniga Packaging</span></div>
       </div>
       <hr />
@@ -37,10 +39,10 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 �
     </div>
   </div>
 
-  <form class="form" id="quote-form" data-endpoint={endpoint} data-product-aliases={JSON.stringify({...productRedirects,...cakeRedirects,...pizzaAliases})} novalidate>
+  <form class="form" id="quote-form" data-endpoint={endpoint} data-container-options={JSON.stringify(Object.fromEntries(containerVariants.map(v=>[v.id,v.title])))} data-product-aliases={JSON.stringify({...productRedirects,...cakeRedirects,...pizzaAliases,'cardboard-food-packaging-box':'cartons','cardboard-food-packing-box-in-bengaluru':'cartons','cardboard-packaging-box-food':'cartons','printed-corrugated-boxes':'cartons',containers:'paper-food-containers','eco-friendly-clamshell-box':'eco','eco-friendly-disposable-paper-boxes':'eco'})} novalidate>
     <input type="hidden" name="_subject" value="New quote request — Vaniga Packaging" />
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
-    <div class="form-head"><h3>Request a quote</h3><span>TAKES A MINUTE</span></div>
+    <div class="form-head"><h3>Request a quote</h3><span>TAKES LESS THAN A MINUTE</span></div>
     <div class="fields">
       <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" type="text" placeholder="Full name" autocomplete="name" required /></div>
       <div class="field"><label for="q-biz">Business name</label><input id="q-biz" name="business" type="text" placeholder="Bakery, restaurant or brand" autocomplete="organization" /></div>
@@ -86,6 +88,12 @@ const qty = [['1k', 'Under 1,000'], ['5k', '1,000 – 5,000'], ['25k', '5,000 �
   const productSelect = document.getElementById('q-product') as HTMLSelectElement | null;
   if (cakeId && productSelect && [...productSelect.options].some(option => option.value === cakeId)) {
     productSelect.value = cakeId;
+  }
+  const containerId = new URLSearchParams(window.location.search).get('container');
+  const containerOptions = JSON.parse(document.getElementById('quote-form')?.dataset.containerOptions ?? '{}');
+  const message = document.getElementById('q-msg') as HTMLTextAreaElement | null;
+  if (cakeId === 'paper-food-containers' && containerId && containerOptions[containerId] && message && !message.value) {
+    message.value = `Container option: ${containerOptions[containerId]}`;
   }
   const form = document.getElementById('quote-form') as HTMLFormElement | null;
   const statusEl = document.getElementById('form-status');

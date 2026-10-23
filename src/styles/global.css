@@ -2,10 +2,12 @@
   --accent: #c93b22;
   --accent-dark: #a92f1a;
   --paper: #f4eee3;
+  --sand: #ede3d3;
   --card: #fffcf6;
   --ink: #191814;
   --muted: #5c554a;
   --kraft: #d8b988;
+  --quote-background: color-mix(in srgb, var(--kraft) 70%, var(--paper));
   --kraft-deep: #3d3528;
   --green: #2e5b3b;
   --line: rgba(25, 24, 20, 0.12);
@@ -62,10 +64,11 @@ img, svg { max-width: 100%; }
 
 /* top strip */
 .strip {
-  height: 40px; padding: 0 var(--gutter); display: flex; align-items: center; justify-content: space-between;
+  min-height: 40px; padding: 8px var(--gutter); display: flex; flex-wrap:wrap; gap:8px 24px; align-items: center; justify-content: space-between;
   background: var(--ink); color: var(--paper); font: 12px var(--mono); letter-spacing: 0.06em;
 }
 .strip div { display: flex; gap: 32px; align-items: center; }
+.strip .strip-contact { gap:20px;flex-wrap:wrap; }
 .strip .kraft { color: var(--kraft); }
 .strip .dim { color: #bfb5a3; }
 .strip a { text-decoration: none; }
@@ -244,8 +247,11 @@ img, svg { max-width: 100%; }
 .c-cartons .arrow-btn { background: rgba(244, 238, 227, 0.12); color: var(--paper); }
 .c-cartons .chip { background: rgba(244, 238, 227, 0.12); }
 
+/* Calm section backgrounds; coloured cards and buttons provide the accents. */
+.hero, #products, #why { background-color:var(--paper); }
+
 /* custom printing */
-.custom { background: var(--ink); color: var(--paper); display: flex; gap: 80px; align-items: center; }
+.custom { background: var(--sand); color: var(--ink); display: flex; gap: 80px; align-items: center; }
 .custom-copy { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .custom .eyebrow { color: var(--kraft); }
 .custom-lede { margin-top: 24px; max-width: 520px; font-size: 18px; line-height: 1.55; color: #c9c0b0; }
@@ -291,7 +297,7 @@ img, svg { max-width: 100%; }
 .tag.green { background: var(--green); border-color: var(--green); color: var(--card); }
 
 /* quote */
-.quote { display: flex; gap: 64px; align-items: flex-start; background-size: 18px 18px; }
+.quote { display: flex; gap: 64px; align-items: flex-start; background:var(--quote-background); }
 .quote-copy { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .quote .eyebrow { color: var(--kraft-deep); }
 .quote h2 { margin-top: 16px; font: 700 80px/0.95 var(--display); letter-spacing: -0.04em; }
@@ -301,7 +307,7 @@ img, svg { max-width: 100%; }
   display: flex; flex-direction: column; gap: 20px;
 }
 .contact .who { display: flex; align-items: center; gap: 16px; }
-.avatar { width: 56px; height: 56px; border-radius: 999px; background: var(--accent); color: var(--card); display: flex; align-items: center; justify-content: center; font: 700 22px var(--display); }
+.avatar { width: 56px; height: 56px; flex-shrink:0; border-radius: 999px; background: var(--card); display: flex; align-items: center; justify-content: center; }
 .contact .who b { display: block; font-size: 18px; font-weight: 600; }
 .contact .who span { display: block; margin-top: 2px; font-size: 14px; color: #bfb5a3; }
 .contact hr { width: 100%; height: 1px; border: 0; margin: 0; background: rgba(244, 238, 227, 0.16); }
@@ -587,3 +593,9 @@ img:is(
 ) {
   filter: saturate(0.94) brightness(1.02);
 }
+
+/* Equal-size homepage category cards, with actions aligned at the bottom. */
+.bento { grid-auto-rows:1fr; align-items:stretch; }
+.bento > .card { height:100%; min-width:0; flex-direction:column; justify-content:flex-start; }
+.bento > .card > .card-body { display:flex; flex-direction:column; flex:1; }
+.bento > .card :is(.bakery-browse,.collection-browse) { margin-top:auto; padding-top:16px; }

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "white-500",
+    "title": "White paper container \u2014 500 ml",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Capacity",
+        "500 mL"
+      ],
+      [
+        "Shape",
+        "Rectangle"
+      ],
+      [
+        "Material",
+        "Paper"
+      ],
+      [
+        "Pack Size",
+        "100 Pieces"
+      ],
+      [
+        "Colour",
+        "White"
+      ],
+      [
+        "Pattern",
+        "Plain"
+      ]
+    ],
+    "gallery": [
+      "product-144.webp",
+      "product-169.webp",
+      "product-170.webp",
+      "product-171.webp",
+      "product-145.webp",
+      "product-146.webp",
+      "product-147.webp"
+    ],
+    "note": "Listed pack quantities are 100 and 500 pieces. Confirm packing, dimensions and lid options with your quote."
+  },
+  {
+    "id": "kraft-500",
+    "title": "Kraft paper container \u2014 500 ml",
+    "specifications": [
+      [
+        "Capacity",
+        "500 mL"
+      ],
+      [
+        "Shape",
+        "Rectangle"
+      ],
+      [
+        "Material",
+        "Paper"
+      ],
+      [
+        "Pack Size",
+        "500 Pieces"
+      ],
+      [
+        "Minimum order",
+        "Confirm quantity with your quote"
+      ]
+    ],
+    "gallery": [
+      "product-148.webp",
+      "product-149.webp",
+      "product-150.webp",
+      "product-151.webp",
+      "product-152.webp",
+      "product-153.webp",
+      "product-154.webp"
+    ],
+    "note": "Confirm dimensions, colour, lining and lid options. White and kraft 500 ml options are listed separately pending confirmation of construction."
+  },
+  {
+    "id": "brown-750",
+    "title": "Brown container \u2014 750 ml",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Capacity",
+        "750 ml"
+      ],
+      [
+        "Pattern",
+        "Plain"
+      ],
+      [
+        "Color",
+        "Brown"
+      ],
+      [
+        "Country of Origin",
+        "Made in India"
+      ],
+      [
+        "Dimensions",
+        "Available sizes need confirmation"
+      ]
+    ],
+    "gallery": [
+      "product-228.webp",
+      "product-229.webp",
+      "product-230.webp"
+    ],
+    "note": "Confirm material, lining, dimensions and lid options with your quote."
+  },
+  {
+    "id": "kraft-1000",
+    "title": "Kraft paper container \u2014 1000 ml",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Material",
+        "Cardboard/Kraft paper"
+      ],
+      [
+        "Shape",
+        "Rectangle"
+      ],
+      [
+        "Capacity",
+        "1000ml"
+      ],
+      [
+        "Pack Size",
+        "100 Pieces"
+      ]
+    ],
+    "gallery": [
+      "product-144.webp",
+      "product-231.webp",
+      "product-232.webp",
+      "product-233.webp"
+    ],
+    "note": "Confirm dimensions, lining and lid options with your quote."
+  },
+  {
+    "id": "brown-2500",
+    "title": "Brown container \u2014 2500 ml",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Capacity",
+        "2500ml"
+      ],
+      [
+        "Type",
+        "Biodegradable"
+      ],
+      [
+        "Color",
+        "Brown"
+      ],
+      [
+        "Dimensions",
+        "Available sizes need confirmation"
+      ]
+    ],
+    "gallery": [
+      "product-162.webp",
+      "product-163.webp",
+      "product-164.webp",
+      "product-165.webp"
+    ],
+    "note": "Confirm material, lining, dimensions and lid options with your quote."
+  },
+  {
+    "id": "capacity-to-confirm",
+    "title": "Food-grade paper container \u2014 capacity to confirm",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Material",
+        "Paper"
+      ],
+      [
+        "made in",
+        "india"
+      ],
+      [
+        "Dimensions",
+        "Available sizes need confirmation"
+      ]
+    ],
+    "gallery": [
+      "product-166.webp",
+      "product-167.webp",
+      "product-168.webp"
+    ],
+    "note": "Capacity and construction need confirmation before this can be matched to a size option."
+  }
+]

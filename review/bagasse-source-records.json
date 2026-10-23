@@ -1,0 +1,103 @@
+[
+  {
+    "id": "sugarcane-bagasse-burger-boxes",
+    "title": "Sugarcane Bagasse Burger Boxes",
+    "category": "eco",
+    "group": "Bagasse packaging",
+    "size": "Medium",
+    "material": "Bagasse",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Material",
+        "Bagasse"
+      ],
+      [
+        "Box Style",
+        "Top Open"
+      ],
+      [
+        "Folding Carton Style",
+        "One-piece Tuck Top Boxes"
+      ],
+      [
+        "Shape",
+        "Square"
+      ],
+      [
+        "Box Color",
+        "White"
+      ],
+      [
+        "Usage",
+        "Fast Food, Nuggets, Snacks, French Fries, Food Delivery, Burger, Sandwich, Wrap"
+      ],
+      [
+        "Design",
+        "Plain"
+      ],
+      [
+        "Microwave Safe",
+        "No"
+      ],
+      [
+        "Food Grade",
+        "Yes"
+      ]
+    ],
+    "note": "",
+    "sourceCategory": "Clamshell Boxes",
+    "image": "product-157.webp",
+    "gallery": [
+      "product-157.webp",
+      "product-158.webp",
+      "product-159.webp",
+      "product-160.webp",
+      "product-161.webp"
+    ]
+  },
+  {
+    "id": "biodegradable-sugarcane-bagasse-container",
+    "title": "Biodegradable Sugarcane Bagasse Container",
+    "category": "eco",
+    "group": "Bagasse packaging",
+    "size": "100 Pieces",
+    "material": "Sugarcane Bagasse",
+    "specifications": [
+      [
+        "Minimum Order Quantity",
+        "500 Piece"
+      ],
+      [
+        "Material",
+        "Sugarcane Bagasse"
+      ],
+      [
+        "Capacity",
+        "1000ml"
+      ],
+      [
+        "Shape",
+        "Round"
+      ],
+      [
+        "Pack Size",
+        "100 Pieces"
+      ]
+    ],
+    "note": "",
+    "sourceCategory": "Aluminum Foil Container",
+    "image": "product-205.webp",
+    "gallery": [
+      "product-205.webp",
+      "product-206.webp",
+      "product-207.webp",
+      "product-208.webp",
+      "product-209.webp",
+      "product-210.webp"
+    ]
+  }
+]

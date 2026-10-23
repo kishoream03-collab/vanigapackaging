@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "key": "cardboard-shipping-boxes-3d",
+      "reference": 131,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D catalogue render of LARGE cardboard packaging boxes based on the reference. Realistic corrugated board thickness, crisp folds, soft studio lighting and contact shadows, warm off-white seamless background. Centered square composition with generous margins, entire products visible. No food, medicines, props, real brands, external captions, dimensions or watermark. Show a compact arrangement of three large natural brown kraft regular slotted shipping cartons: one open in front with four top flaps spread and empty interior visible, and two closed behind at different sizes. Preserve the plain corrugated shipping-carton format from reference, not thin retail paperboard or hinged mailers. Three-quarter elevated view. No printing or text.",
+      "output": "public/images/packaging/cardboard-shipping-boxes-3d.webp"
+    },
+    {
+      "key": "cardboard-printed-box-3d",
+      "reference": 53,
+      "prompt": "Use case: product-mockup. Premium photorealistic 3D catalogue render of LARGE cardboard packaging boxes based on the reference. Realistic corrugated board thickness, crisp folds, soft studio lighting and contact shadows, warm off-white seamless background. Centered square composition with generous margins, entire products visible. No food, medicines, props, real brands, external captions, dimensions or watermark. Recreate the reference large deep rectangular open-top printed corrugated carton, natural brown kraft inside and brick-red printed exterior. Preserve the deep box proportions and visible fluted rim, no lid, not a shallow food tray. Restrained subtle dark-red geometric linework and small white generic words \"CUSTOM PRINT\" on one side only; omit the source branding, decorative flourishes and environmental claims. One box, three-quarter elevated view revealing the empty interior.",
+      "output": "public/images/packaging/cardboard-printed-box-3d.webp"
+    }
+  ]
+}

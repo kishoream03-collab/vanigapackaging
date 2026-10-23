@@ -1,7 +1,9 @@
 export const site = {
   name: 'Vaniga Packaging',
+  gstin: '33AUWPA8423H1ZI',
   phone: '+91-789-283-8275',
   phoneHref: 'tel:+917892838275',
+  whatsappHref: 'https://wa.me/917892838275',
   email: 'info@vanigapackaging.com',
   addressLines: ['Chennai', 'India'],
   mapsHref:
@@ -21,23 +23,17 @@ export const marquee = [
   'Shawarma & kati roll boxes', 'Mono cartons', 'Bagasse containers', 'Clamshells',
 ];
 
-export const industries: { label: string; tone: string }[] = [
-  { label: 'Bakeries & cake shops', tone: 'accent' },
-  { label: 'Pizzerias', tone: '' },
-  { label: 'Burger & fried chicken outlets', tone: '' },
-  { label: 'Roll & shawarma counters', tone: '' },
-  { label: 'Cloud kitchens', tone: 'kraft' },
-  { label: 'Restaurants & darshinis', tone: '' },
-  { label: 'Sweet shops', tone: '' },
-  { label: 'Caterers & events', tone: 'ink' },
-  { label: 'Cinemas & snack counters', tone: '' },
-  { label: 'Pharma companies', tone: '' },
-  { label: 'Retail & D2C brands', tone: 'green' },
+export const industries: { label: string; description: string; href: string }[] = [
+  { label: 'Bakeries & sweet shops', description: 'Cake, cupcake and sweet boxes', href: '/cake-box.html' },
+  { label: 'Pizzerias', description: 'Plain and printed pizza boxes', href: '/pizza-box.html' },
+  { label: 'Takeaway & quick service', description: 'Burger, chicken, roll and snack packaging', href: '/packaging/burger/' },
+  { label: 'Restaurants & catering', description: 'Meal boxes and paper food containers', href: '/packaging/rolls/' },
+  { label: 'Retail & D2C brands', description: 'Mono cartons, mailers and cardboard boxes', href: '/packaging/cartons/' },
+  { label: 'Pharmaceutical companies', description: 'Custom printed outer cartons', href: '/products/pharmaceutical-cartons/' },
 ];
 
 export const steps = [
-  ['Tell us what you pack', 'Your product, box size and rough monthly quantity.'],
-  ['We match the right box', 'Style, board and finish options that fit your product and budget.'],
-  ['Approve the artwork', 'Check the proof with your logo before anything goes to print.'],
-  ['Production and dispatch', 'We coordinate production with our manufacturing partners and arrange dispatch.'],
+  ['Share your requirements', 'Send your logo, packaging style, dimensions and quantity.'],
+  ['Approve the artwork', 'Review the layout, colours and print details before production.'],
+  ['Production & dispatch', 'We coordinate with our manufacturing partners and arrange dispatch.'],
 ];

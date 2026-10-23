@@ -58,56 +58,176 @@
     ]
   },
   {
-    "id": "mono-carton-boxes-manufacturers-in-bengaluru",
-    "title": "Brown kraft mono carton box",
+    "id": "mono-carton-boxes",
+    "title": "Mono carton boxes",
     "category": "cartons",
     "group": "Mono cartons",
-    "size": null,
-    "material": "200 GSM",
+    "size": "Custom dimensions — confirm with your quote",
+    "material": "Paperboard — confirm grade and finish",
     "specifications": [
       [
-        "Minimum Order Quantity",
-        "500 Piece"
+        "Construction",
+        "Folding paperboard carton; confirm closure style"
       ],
       [
-        "Material Grade",
-        "200 GSM"
+        "Printing",
+        "Plain or printed; confirm artwork and finish"
       ],
       [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Application",
-        "Food & Beverage"
-      ],
-      [
-        "Color",
-        "Brown"
+        "Board grade",
+        "Source listings include 200 GSM; confirm for your application"
       ],
       [
         "Dimensions",
-        "Available sizes need confirmation"
+        "Confirm length, width and height"
+      ],
+      [
+        "Minimum order",
+        "Source listings include 500 pieces; confirm quantity"
       ]
     ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Packaging Box",
-    "image": "product-4.webp",
+    "note": "Illustrative renders show example folding-carton formats. Confirm board, dimensions, closure, printing and order quantity for your product.",
+    "sourceCategory": "Cartons & corrugated boxes",
+    "image": "carton-mono-closed-3d.webp",
     "gallery": [
-      "product-4.webp",
-      "product-5.webp",
-      "product-6.webp",
-      "product-7.webp"
+      "carton-mono-closed-3d.webp",
+      "carton-mono-open-3d.webp"
     ],
     "mergedFrom": [
+      "mono-carton-packaging-box",
+      "printed-mono-carton",
+      "mono-carton-box",
+      "mano-cartoon-box-manufacture-in-bangalore"
+    ]
+  },
+  {
+    "id": "pharmaceutical-cartons",
+    "title": "Pharmaceutical cartons",
+    "category": "cartons",
+    "group": "Pharmaceutical cartons",
+    "size": "Custom dimensions — confirm with your quote",
+    "material": "Paperboard — confirm grade and finish",
+    "specifications": [
+      [
+        "Application",
+        "Outer cartons for pharmaceutical products"
+      ],
+      [
+        "Printing",
+        "Confirm artwork, required text and finish"
+      ],
+      [
+        "Dimensions",
+        "Confirm against your product or inner pack"
+      ],
+      [
+        "Board grade",
+        "Confirm material and grade"
+      ],
+      [
+        "Minimum order",
+        "Confirm quantity with your quote"
+      ]
+    ],
+    "note": "Illustrative renders show outer-carton formats and sample colour layouts. Confirm board, dimensions, closure and required artwork for your product.",
+    "sourceCategory": "Cartons & corrugated boxes",
+    "image": "carton-pharma-printed-assortment-3d.webp",
+    "gallery": [
+      "carton-pharma-printed-assortment-3d.webp",
+      "carton-pharma-tall-3d.webp",
+      "carton-pharma-flat-3d.webp"
+    ],
+    "mergedFrom": [
+      "pharmaceutical-mono-cartons-packaging-box",
+      "pharmaceutical-mono-carton-boxes"
+    ]
+  },
+  {
+    "id": "corrugated-mailer-boxes",
+    "title": "Corrugated mailer boxes",
+    "category": "cartons",
+    "group": "Corrugated mailers",
+    "size": "Custom dimensions — confirm with your quote",
+    "material": "Corrugated board — confirm construction",
+    "specifications": [
+      [
+        "Format",
+        "Mailer-style box shown in source photography"
+      ],
+      [
+        "Construction",
+        "Confirm corrugated board, flute and ply"
+      ],
+      [
+        "Dimensions",
+        "Confirm internal length, width and height"
+      ],
+      [
+        "Printing",
+        "Confirm plain or printed finish"
+      ],
+      [
+        "Load capacity",
+        "Confirm against the packed product"
+      ],
+      [
+        "Minimum order",
+        "Confirm quantity with your quote"
+      ]
+    ],
+    "note": "Illustrative renders show mailer-style formats. Confirm availability, board construction, dimensions and load capacity for your packed product.",
+    "sourceCategory": "Cartons & corrugated boxes",
+    "image": "carton-mailer-open-3d.webp",
+    "gallery": [
+      "carton-mailer-open-3d.webp",
+      "carton-mailer-closed-3d.webp"
+    ],
+    "mergedFrom": [
+      "printed-mono-carton-box"
+    ]
+  },
+  {
+    "id": "cardboard-packaging-boxes",
+    "title": "Cardboard packaging boxes",
+    "category": "cartons",
+    "group": "Cardboard packaging boxes",
+    "size": "Large carton formats — confirm dimensions",
+    "material": "Corrugated cardboard — confirm grade and ply",
+    "specifications": [
+      [
+        "Formats",
+        "Plain shipping cartons and printed cardboard packaging boxes"
+      ],
+      [
+        "Material",
+        "Corrugated cardboard; confirm board grade, flute and ply"
+      ],
+      [
+        "Dimensions",
+        "Confirm internal length, width and height"
+      ],
+      [
+        "Printing",
+        "Plain brown or custom printed finish"
+      ],
+      [
+        "Load capacity",
+        "Confirm against the packed product and transport requirements"
+      ],
+      [
+        "Minimum order",
+        "Confirm quantity with your quote"
+      ]
+    ],
+    "note": "Illustrative renders show larger cardboard packaging formats from the earlier catalogue. Confirm construction, dimensions, printing and load capacity for your application.",
+    "sourceCategory": "Cardboard packaging boxes",
+    "image": "cardboard-shipping-boxes-3d.webp",
+    "gallery": [
+      "cardboard-shipping-boxes-3d.webp",
+      "cardboard-printed-box-3d.webp"
+    ],
+    "mergedFrom": [
+      "mono-carton-boxes-manufacturers-in-bengaluru",
       "mono-cartons-corrugated-boxes"
     ]
   },
@@ -880,104 +1000,6 @@
     ]
   },
   {
-    "id": "printed-mono-carton-box",
-    "title": "Printed Mono Carton Box",
-    "category": "cartons",
-    "group": "Mono cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Application",
-        "Food & Beverage"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Corrugated Box",
-    "image": "product-51.webp",
-    "gallery": [
-      "product-51.webp",
-      "product-52.webp",
-      "product-53.webp",
-      "product-54.webp"
-    ]
-  },
-  {
-    "id": "cardboard-food-packaging-box",
-    "title": "Cardboard Food Packaging Box",
-    "category": "cartons",
-    "group": "Food packaging",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Capacity",
-        "500 gm"
-      ],
-      [
-        "Usage/ Application",
-        "Pizza Packaging"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Corrugated Box",
-    "image": "product-55.webp",
-    "gallery": [
-      "product-55.webp",
-      "product-56.webp",
-      "product-57.webp",
-      "product-58.webp"
-    ]
-  },
-  {
     "id": "cupcake-packaging-box-manufacture-in-bangalore",
     "title": "Cupcake packaging box",
     "category": "bakery",
@@ -1018,114 +1040,6 @@
       "product-60.webp",
       "product-61.webp",
       "product-62.webp"
-    ]
-  },
-  {
-    "id": "pharmaceutical-mono-cartons-packaging-box",
-    "title": "Pharmaceutical Mono Cartons Packaging Box",
-    "category": "cartons",
-    "group": "Pharma cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Application",
-        "Pharmaceuticals"
-      ],
-      [
-        "Color",
-        "White"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Corrugated Box",
-    "image": "product-63.webp",
-    "gallery": [
-      "product-63.webp",
-      "product-64.webp",
-      "product-65.webp",
-      "product-66.webp"
-    ]
-  },
-  {
-    "id": "printed-corrugated-boxes",
-    "title": "Printed Corrugated Boxes",
-    "category": "cartons",
-    "group": "Corrugated boxes",
-    "size": "8X8X1.5",
-    "material": "300 GSM",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Number of Ply",
-        "Single Wall 3 Ply"
-      ],
-      [
-        "Weight Holding Capacity",
-        "< 5 Kg"
-      ],
-      [
-        "Size(LXWXH)(Inches)",
-        "8X8X1.5"
-      ],
-      [
-        "Application",
-        "Food Packaging"
-      ],
-      [
-        "Paper Grades(Outer / Inner Liners)",
-        "Fully Recycled Liner"
-      ],
-      [
-        "Material Grade(GSM)",
-        "300 GSM"
-      ],
-      [
-        "Color",
-        "Multi Color"
-      ],
-      [
-        "Property",
-        "Disposable, Biodegradable"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Printed Corrugated Box",
-    "image": "product-90.webp",
-    "gallery": [
-      "product-90.webp",
-      "product-91.webp",
-      "product-92.webp",
-      "product-93.webp",
-      "product-94.webp",
-      "product-95.webp"
     ]
   },
   {
@@ -1179,154 +1093,6 @@
     "gallery": [
       "product-99.webp",
       "product-36.webp"
-    ]
-  },
-  {
-    "id": "pharmaceutical-mono-carton-boxes",
-    "title": "Pharmaceutical Mono Carton Boxes",
-    "category": "cartons",
-    "group": "Pharma cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Folding Carton Style",
-        "Bag-in-Box"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Application",
-        "Food & Beverage"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Printed Corrugated Box",
-    "image": "product-102.webp",
-    "gallery": [
-      "product-102.webp",
-      "product-103.webp",
-      "product-104.webp",
-      "product-105.webp"
-    ]
-  },
-  {
-    "id": "mono-carton-packaging-box",
-    "title": "Kraft mono carton packaging box",
-    "category": "cartons",
-    "group": "Mono cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Application",
-        "Food & Beverage"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Paper Box",
-    "image": "product-106.webp",
-    "gallery": [
-      "product-106.webp",
-      "product-107.webp",
-      "product-53.webp",
-      "product-108.webp",
-      "product-125.webp"
-    ],
-    "mergedFrom": [
-      "duplex-monocarton-box-manufacture-in-bangalore",
-      "duplex-monocarton-box"
-    ]
-  },
-  {
-    "id": "printed-mono-carton",
-    "title": "Printed Mono Carton",
-    "category": "cartons",
-    "group": "Mono cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Application",
-        "Food & Beverage, Consumer Goods (FMCG)"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Paper Box",
-    "image": "product-109.webp",
-    "gallery": [
-      "product-109.webp",
-      "product-110.webp",
-      "product-111.webp",
-      "product-112.webp",
-      "product-113.webp",
-      "product-114.webp"
     ]
   },
   {
@@ -1434,129 +1200,6 @@
     ]
   },
   {
-    "id": "cardboard-food-packing-box-in-bengaluru",
-    "title": "Cardboard Food Packing Box In Bengaluru",
-    "category": "cartons",
-    "group": "Food packaging",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Capacity",
-        "1000 gm"
-      ],
-      [
-        "Usage/ Application",
-        "Biryani Packaging"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Corrugated Packaging Box",
-    "image": "product-58.webp",
-    "gallery": [
-      "product-58.webp",
-      "product-57.webp",
-      "product-56.webp",
-      "product-55.webp"
-    ]
-  },
-  {
-    "id": "mono-carton-box",
-    "title": "Mono Carton Box",
-    "category": "cartons",
-    "group": "Mono cartons",
-    "size": null,
-    "material": null,
-    "specifications": [
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Corrugated Packaging Box",
-    "image": "product-130.webp",
-    "gallery": [
-      "product-130.webp",
-      "product-131.webp",
-      "product-132.webp"
-    ]
-  },
-  {
-    "id": "cardboard-packaging-box-food",
-    "title": "Cardboard Packaging Box Food",
-    "category": "cartons",
-    "group": "Food packaging",
-    "size": "165X115X60 mm",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "100 Piece"
-      ],
-      [
-        "Capacity",
-        "1000 gm"
-      ],
-      [
-        "Usage/ Application",
-        "Biryani Packaging"
-      ],
-      [
-        "Size",
-        "165X115X60 mm"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Material",
-        "Paper"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Corrugated Packaging Boxes And Packaging Boxes",
-    "image": "product-133.webp",
-    "gallery": [
-      "product-133.webp",
-      "product-134.webp",
-      "product-135.webp"
-    ]
-  },
-  {
     "id": "brownie-packaging-box",
     "title": "Brownie Packaging Box",
     "category": "bakery",
@@ -1600,345 +1243,89 @@
     ]
   },
   {
-    "id": "disposable-paper-container",
-    "title": "Disposable Paper Container",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
-    "material": null,
+    "id": "paper-food-containers",
+    "title": "Paper & kraft food containers",
+    "category": "rolls",
+    "group": "Paper & kraft containers",
+    "size": "500 ml · 750 ml · 1000 ml · 2500 ml",
+    "material": "White paper and kraft options; confirm material for each size",
     "specifications": [
       [
-        "Minimum Order Quantity",
-        "500 Piece"
+        "Listed capacities",
+        "500 ml, 750 ml, 1000 ml and 2500 ml"
       ],
       [
-        "Capacity",
-        "500 ml"
+        "Options",
+        "White and kraft 500 ml listings; other capacities and constructions to confirm"
       ],
       [
-        "Pattern",
-        "Plain"
+        "Lids, lining and dimensions",
+        "Confirm for your chosen option"
       ],
       [
-        "Color",
-        "White"
-      ],
-      [
-        "Packet Contains",
-        "500"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Paper Container",
-    "image": "product-144.webp",
-    "gallery": [
-      "product-144.webp",
-      "product-145.webp",
-      "product-146.webp",
-      "product-147.webp"
-    ]
-  },
-  {
-    "id": "kraft-food-containers",
-    "title": "Kraft Food Containers",
-    "category": "containers",
-    "group": "Other styles",
-    "size": "500 Pieces",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Capacity",
-        "500 mL"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Pack Size",
-        "500 Pieces"
-      ],
-      [
-        "Minimum order",
+        "Pack quantity and minimum order",
         "Confirm quantity with your quote"
       ]
     ],
-    "note": "",
-    "sourceCategory": "Paper Container",
-    "image": "product-148.webp",
+    "note": "Confirm your required capacity, dimensions, material, food suitability and lid compatibility with your quote.",
+    "sourceCategory": "Paper and kraft food containers",
+    "image": "paper-container-white-3d.webp",
     "gallery": [
-      "product-148.webp",
-      "product-149.webp",
-      "product-150.webp",
-      "product-151.webp"
+      "paper-container-white-3d.webp",
+      "kraft-container-bowls-3d.webp"
     ]
   },
   {
-    "id": "paper-food-container-manufacturer",
-    "title": "Paper food container",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
-    "material": null,
-    "specifications": [
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Paper Container",
-    "image": "product-148.webp",
-    "gallery": [
-      "product-148.webp",
-      "product-152.webp",
-      "product-153.webp",
-      "product-154.webp"
-    ]
-  },
-  {
-    "id": "eco-friendly-clamshell-box",
-    "title": "Eco Friendly Clamshell Box",
-    "category": "eco",
-    "group": "Other eco packaging",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Capacity",
-        "2200ml"
-      ],
-      [
-        "Usage/Application",
-        "Burger Packaging"
-      ],
-      [
-        "Color",
-        "Multicolor"
-      ],
-      [
-        "Design",
-        "Printed"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Clamshell Boxes",
-    "image": "product-155.webp",
-    "gallery": [
-      "product-155.webp",
-      "product-156.webp"
-    ]
-  },
-  {
-    "id": "sugarcane-bagasse-burger-boxes",
-    "title": "Sugarcane Bagasse Burger Boxes",
+    "id": "sugarcane-bagasse-packaging",
+    "title": "Sugarcane bagasse boxes & containers",
     "category": "eco",
     "group": "Bagasse packaging",
-    "size": "Medium",
-    "material": "Bagasse",
+    "size": "Burger clamshells & meal boxes · confirm dimensions",
+    "material": "Sugarcane bagasse",
     "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
       [
         "Material",
-        "Bagasse"
+        "Sugarcane bagasse"
       ],
       [
-        "Burger Size",
-        "Medium"
+        "Formats shown",
+        "Square burger clamshell and rectangular meal box"
       ],
       [
-        "Box Style",
-        "Top Open"
+        "Dimensions and capacity",
+        "Confirm for your chosen format"
       ],
       [
-        "Folding Carton Style",
-        "One-piece Tuck Top Boxes"
+        "Colour",
+        "Natural white"
       ],
       [
-        "Shape",
-        "Square"
+        "Minimum order",
+        "Source listings indicate 500 pieces; confirm per format"
       ],
       [
-        "Box Color",
-        "White"
+        "Pack quantity",
+        "Confirm per format"
       ],
       [
-        "Usage",
-        "Fast Food, Nuggets, Snacks, French Fries, Food Delivery, Burger, Sandwich, Wrap"
-      ],
-      [
-        "Design",
-        "Plain"
-      ],
-      [
-        "Microwave Safe",
-        "No"
-      ],
-      [
-        "Food Grade",
-        "Yes"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
+        "Microwave suitability",
+        "Not confirmed for the range; source burger listing states No"
       ]
     ],
-    "note": "",
-    "sourceCategory": "Clamshell Boxes",
-    "image": "product-157.webp",
+    "note": "Illustrative product renders show the listed packaging styles. Confirm dimensions, capacity, closure and food suitability for your chosen format before ordering.",
+    "sourceCategory": "Bagasse packaging",
+    "image": "bagasse-burger-clamshell-3d.webp",
     "gallery": [
-      "product-157.webp",
-      "product-158.webp",
-      "product-159.webp",
-      "product-160.webp",
-      "product-161.webp"
-    ]
-  },
-  {
-    "id": "disposable-paper-food-containers",
-    "title": "Disposable Paper Food Containers",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
-    "material": null,
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Capacity",
-        "2500ml"
-      ],
-      [
-        "Type",
-        "Biodegradable"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Disposable Paper Food Containers",
-    "image": "product-162.webp",
-    "gallery": [
-      "product-162.webp",
-      "product-163.webp",
-      "product-164.webp",
-      "product-165.webp"
-    ]
-  },
-  {
-    "id": "food-grade-paper-containers",
-    "title": "Food Grade Paper Containers",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "made in",
-        "india"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Disposable Paper Food Containers",
-    "image": "product-166.webp",
-    "gallery": [
-      "product-166.webp",
-      "product-167.webp",
-      "product-168.webp"
-    ]
-  },
-  {
-    "id": "paper-food-container",
-    "title": "Paper Food Container",
-    "category": "containers",
-    "group": "Other styles",
-    "size": "100 Pieces",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Capacity",
-        "500 mL"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Pack Size",
-        "100 Pieces"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Paper Cup",
-    "image": "product-144.webp",
-    "gallery": [
-      "product-144.webp",
-      "product-169.webp",
-      "product-170.webp",
-      "product-171.webp"
+      "bagasse-burger-clamshell-3d.webp",
+      "bagasse-meal-clamshell-3d.webp"
     ]
   },
   {
     "id": "paper-food-boxes",
-    "title": "Paper Food Boxes",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
+    "title": "Printed biryani box — 250 g",
+    "category": "rolls",
+    "group": "Biryani boxes",
+    "size": "250 g",
     "material": "Paper",
     "specifications": [
       [
@@ -1981,98 +1368,6 @@
       "product-174.webp",
       "product-175.webp",
       "product-176.webp"
-    ]
-  },
-  {
-    "id": "eco-friendly-disposable-paper-boxes",
-    "title": "Eco Friendly Disposable paper Boxes",
-    "category": "eco",
-    "group": "Other eco packaging",
-    "size": "500 Pieces",
-    "material": "Paper",
-    "specifications": [
-      [
-        "Capacity",
-        "2200ml"
-      ],
-      [
-        "Material",
-        "Paper"
-      ],
-      [
-        "Pack Size",
-        "500 Pieces"
-      ],
-      [
-        "deals in",
-        "new only"
-      ],
-      [
-        "made in",
-        "india"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Eco Friendly Disposable Boxes",
-    "image": "product-196.webp",
-    "gallery": [
-      "product-196.webp",
-      "product-197.webp",
-      "product-198.webp"
-    ]
-  },
-  {
-    "id": "mano-cartoon-box-manufacture-in-bangalore",
-    "title": "Mono carton box",
-    "category": "cartons",
-    "group": "Mono cartons",
-    "size": null,
-    "material": "200 GSM",
-    "specifications": [
-      [
-        "Material Grade",
-        "200 GSM"
-      ],
-      [
-        "Material",
-        "Kraft Paperboard"
-      ],
-      [
-        "Folding Carton Style",
-        "Straight Tuck End Box"
-      ],
-      [
-        "Shape",
-        "Square"
-      ],
-      [
-        "Application",
-        "Food & Beverage"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ],
-      [
-        "Minimum order",
-        "Confirm quantity with your quote"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Mono Carton Packaging Box",
-    "image": "product-199.webp",
-    "gallery": [
-      "product-199.webp",
-      "product-200.webp",
-      "product-201.webp"
     ]
   },
   {
@@ -2126,47 +1421,6 @@
     ]
   },
   {
-    "id": "biodegradable-sugarcane-bagasse-container",
-    "title": "Biodegradable Sugarcane Bagasse Container",
-    "category": "eco",
-    "group": "Bagasse packaging",
-    "size": "100 Pieces",
-    "material": "Sugarcane Bagasse",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Sugarcane Bagasse"
-      ],
-      [
-        "Capacity",
-        "1000ml"
-      ],
-      [
-        "Shape",
-        "Round"
-      ],
-      [
-        "Pack Size",
-        "100 Pieces"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Aluminum Foil Container",
-    "image": "product-205.webp",
-    "gallery": [
-      "product-205.webp",
-      "product-206.webp",
-      "product-207.webp",
-      "product-208.webp",
-      "product-209.webp",
-      "product-210.webp"
-    ]
-  },
-  {
     "id": "cupcake-packaging-box",
     "title": "Printed cupcake packaging box",
     "category": "bakery",
@@ -2213,87 +1467,6 @@
     ],
     "mergedFrom": [
       "packaging-box-for-cupcakes"
-    ]
-  },
-  {
-    "id": "750-ml-food-packaging-container",
-    "title": "750 Ml Food Packaging Container",
-    "category": "containers",
-    "group": "Other styles",
-    "size": null,
-    "material": null,
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Capacity",
-        "750 ml"
-      ],
-      [
-        "Pattern",
-        "Plain"
-      ],
-      [
-        "Color",
-        "Brown"
-      ],
-      [
-        "Country of Origin",
-        "Made in India"
-      ],
-      [
-        "Dimensions",
-        "Available sizes need confirmation"
-      ]
-    ],
-    "note": "The source does not list dimensions. Please confirm your required size with your quote.",
-    "sourceCategory": "Paper Food Packaging Container",
-    "image": "product-228.webp",
-    "gallery": [
-      "product-228.webp",
-      "product-229.webp",
-      "product-230.webp"
-    ]
-  },
-  {
-    "id": "biodegradable-container",
-    "title": "Biodegradable Container",
-    "category": "eco",
-    "group": "Other eco packaging",
-    "size": "100 Pieces",
-    "material": "Cardboard/Kraft paper",
-    "specifications": [
-      [
-        "Minimum Order Quantity",
-        "500 Piece"
-      ],
-      [
-        "Material",
-        "Cardboard/Kraft paper"
-      ],
-      [
-        "Shape",
-        "Rectangle"
-      ],
-      [
-        "Capacity",
-        "1000ml"
-      ],
-      [
-        "Pack Size",
-        "100 Pieces"
-      ]
-    ],
-    "note": "",
-    "sourceCategory": "Paper Food Container",
-    "image": "product-144.webp",
-    "gallery": [
-      "product-144.webp",
-      "product-231.webp",
-      "product-232.webp",
-      "product-233.webp"
     ]
   },
   {

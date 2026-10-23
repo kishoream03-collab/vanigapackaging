@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "key": "square",
+      "reference": "product-160.webp",
+      "output": "bagasse-burger-clamshell-3d.webp",
+      "prompt": "Use case: product-mockup. Create a premium photorealistic 3D catalogue render of the reference square sugarcane bagasse burger clamshell. Preserve the square single-compartment base, rounded corners, ribbed moulded fibre walls, integral hinge and matching lid, lid open at about 110 degrees. One empty container only, centered three-quarter view from slightly above with the front and interior visible, entire object within frame and generous margins. Natural ivory white matte bagasse fibre texture. Warm off-white seamless background and soft contact shadow, consistent soft studio lighting. Remove all reference text. No food, props, logos, labels, text, watermark or dimensional claims. Square composition."
+    },
+    {
+      "key": "meal",
+      "reference": "product-205.webp",
+      "output": "bagasse-meal-clamshell-3d.webp",
+      "prompt": "Use case: product-mockup. Create a premium photorealistic 3D catalogue render of the elongated rectangular bagasse clamshell shown open at the top of the reference image. Show only one empty rectangular single-compartment meal box with its integral hinged lid open at about 110 degrees. Preserve the rounded rectangular shape, moulded fibre ribs and shallow raised lid design. Do not include the square boxes below it in the reference. Natural ivory white matte sugarcane bagasse fibre, three-quarter view from slightly above, fully visible and centered with generous margins. Warm off-white seamless background, soft contact shadow, consistent soft studio lighting. No green backdrop, food, text, logos, labels, watermark, dimensions or extra objects. Square composition."
+    }
+  ]
+}

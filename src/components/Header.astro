@@ -1,13 +1,11 @@
 ---
-import pizzas from '../data/pizzas.json';
-import cakes from '../data/cakes';
 import Icon from './Icon.astro';
 import Logo from './Logo.astro';
 import { site, nav } from '../data/site';
 ---
 <div class="strip">
   <div><span>PACKAGING SUPPLIER &amp; EXPORTER</span><span class="kraft">CHENNAI · INDIA</span></div>
-  <div><a href={site.phoneHref}>CALL {site.phone}</a></div>
+  <div class="strip-contact"><span>GSTIN: {site.gstin}</span><a href={site.phoneHref}>CALL {site.phone}</a></div>
 </div>
 <header class="site-header">
   <a href="/#top" class="brand" aria-label="Vaniga Packaging, home">
@@ -16,7 +14,7 @@ import { site, nav } from '../data/site';
     <span class="brand-tag">PACKAGING</span>
   </a>
   <nav class="nav" aria-label="Main">
-    {nav.map((n) => n.label === 'Products' ? <details class="products-menu"><summary>Products <span aria-hidden="true">⌄</span></summary><div class="products-menu-links"><a href="/packaging/">All packaging</a><a href="/cake-box.html">Cake boxes <span>{cakes.length} products</span></a><a href="/pizza-box.html">Pizza boxes <span>{pizzas.length} products</span></a>{['burger','rolls','containers','eco','cartons','gifts'].map(id=><a href={`/packaging/${id}/`}>{({burger:'Burger, chicken & snacks',rolls:'Roll & meal boxes',containers:'Food containers',eco:'Eco packaging',cartons:'Cartons & corrugated',gifts:'Gift bags'})[id]}</a>)}</div></details> : <a href={`/${n.href}`}>{n.label}</a>)}
+    {nav.map((n) => n.label === 'Products' ? <details class="products-menu"><summary>Products</summary><div class="products-menu-links"><a href="/packaging/">All packaging</a><a href="/cake-box.html">Cake boxes</a><a href="/pizza-box.html">Pizza boxes</a>{['burger','rolls','eco','cartons','gifts'].map(id=><a href={`/packaging/${id}/`}>{({burger:'Burger, chicken & snacks',rolls:'Roll, biryani & meal boxes',eco:'Sugarcane bagasse packaging',cartons:'Cartons & corrugated',gifts:'Gift bags'})[id]}</a>)}</div></details> : <a href={`/${n.href}`}>{n.label}</a>)}
   </nav>
   <div class="header-cta">
     <a href={site.phoneHref} class="header-phone"><Icon name="phone" stroke={1.8} />{site.phone}</a>
@@ -26,7 +24,7 @@ import { site, nav } from '../data/site';
     </button>
   </div>
   <div class="mobile-nav" id="mobile-nav">
-    {nav.map((n) => <><a href={`/${n.href}`}>{n.label}</a>{n.label === 'Products' && <><a href="/cake-box.html" class="mobile-cake-link">Cake boxes · {cakes.length} products</a><a href="/pizza-box.html" class="mobile-cake-link">Pizza boxes · {pizzas.length} products</a></>}</>)}
+    {nav.map((n) => <><a href={`/${n.href}`}>{n.label}</a>{n.label === 'Products' && <><a href="/cake-box.html" class="mobile-cake-link">Cake boxes</a><a href="/pizza-box.html" class="mobile-cake-link">Pizza boxes</a></>}</>)}
     <a href="/#quote" class="btn btn-accent">Get a quote <Icon name="arrow" /></a>
   </div>
 </header>
@@ -47,6 +45,15 @@ import { site, nav } from '../data/site';
   panel?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
   document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
   const productsMenu = document.querySelector<HTMLDetailsElement>('.products-menu');
+  productsMenu?.addEventListener('pointerenter', (event) => {
+    if (event.pointerType === 'mouse' || event.pointerType === 'pen') productsMenu.open = true;
+  });
+  productsMenu?.addEventListener('pointerleave', (event) => {
+    if (event.pointerType !== 'touch' && !productsMenu.contains(document.activeElement)) productsMenu.open = false;
+  });
+  productsMenu?.addEventListener('focusout', (event) => {
+    if (!productsMenu.contains(event.relatedTarget as Node | null)) productsMenu.open = false;
+  });
   document.addEventListener('click', (event) => {
     if (productsMenu && !productsMenu.contains(event.target as Node)) productsMenu.open = false;
   });

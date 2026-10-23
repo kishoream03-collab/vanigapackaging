@@ -1,50 +1,51 @@
 ---
-import { gallery } from '../data/gallery';
+import cakes from '../data/cakes';
+import pizzas from '../data/pizzas.json';
+import packaging from '../data/packaging.json';
 
-// All seven photos in three auto-scrolling columns (alternating direction).
-const byFile = Object.fromEntries(gallery.map((g) => [g.file, g]));
-const alt: Record<string, string> = {
-  'paper-pizza-boxes.webp': 'Stack of plain white paper pizza boxes',
-  'plain-pizza-packaging-box.webp': 'Plain pizza packaging box, open',
-  'pizza-corrugated-printed.webp': 'Printed corrugated pizza box with a hand-drawn pizza design',
-  'printed-pizza-box.webp': 'Printed pizza box, flat kraft board',
-  'printed-plum-cake-box.webp': 'Two printed Christmas plum cake boxes, one green and one red',
-  'printed-corrugated-boxes.webp': 'Printed corrugated pizza boxes, closed and open',
-  'eco-clamshell-box.webp': 'Eco friendly burger clamshell boxes',
-};
-const label: Record<string, string> = {
-  'paper-pizza-boxes.webp': 'Paper pizza boxes',
-  'plain-pizza-packaging-box.webp': 'Plain pizza box',
-  'pizza-corrugated-printed.webp': 'Printed corrugated pizza box',
-  'printed-pizza-box.webp': 'Printed pizza box',
-  'printed-plum-cake-box.webp': 'Plum cake boxes',
-  'printed-corrugated-boxes.webp': 'Corrugated pizza boxes',
-  'eco-clamshell-box.webp': 'Eco clamshell boxes',
-};
-const columns = [
-  { dir: 'up', dur: 46, files: ['printed-corrugated-boxes.webp', 'plain-pizza-packaging-box.webp'] },
-  { dir: 'down', dur: 52, files: ['printed-pizza-box.webp', 'paper-pizza-boxes.webp', 'printed-plum-cake-box.webp'] },
-  { dir: 'up', dur: 40, files: ['eco-clamshell-box.webp', 'pizza-corrugated-printed.webp'] },
+// Use current catalogue images and titles; omit Gift bags and More bakery packaging.
+const families = [
+  cakes.map(p => ({ src: `/images/cakes/${p.image}`, title: p.title })),
+  pizzas.map(p => ({ src: `/images/pizza/${p.image}`, title: p.title })),
+  ...['burger', 'rolls', 'eco', 'cartons'].map(category =>
+    packaging.filter(p => p.category === category).map(p => ({
+      src: `/images/packaging/${p.image}`, title: p.title,
+    })),
+  ),
 ];
+// Mix the categories so the wall represents the whole range throughout its loop.
+const mixed = Array.from({ length: Math.max(...families.map(f => f.length)) }, (_, i) =>
+  families.flatMap(f => f[i] ? [f[i]] : []),
+).flat();
+const seen = new Set<string>();
+const images = mixed.filter(p => {
+  if (seen.has(p.src)) return false;
+  seen.add(p.src);
+  return true;
+});
+const columns = ['up', 'down', 'up'].map((dir, i) => {
+  const items = images.filter((_, index) => index % 3 === i);
+  return { dir, dur: Math.max(40, items.length * 18), items };
+});
 ---
 <div class="hero-photos">
-  {columns.map((col) => (
+  {columns.map(col => (
     <div class="wall-col">
       <div class={`track track-${col.dir}`} style={`--dur:${col.dur}s`}>
-        {[0, 1, 2].map((copy) => (
+        {[0, 1, 2].map(copy => (
           <div class="set" aria-hidden={copy > 0 ? 'true' : undefined}>
-            {col.files.map((f) => {
-              const g = byFile[f];
-              return (
-                <figure class="print">
-                  <img src={`/images/products/${g.file}`} alt={copy === 0 ? alt[f] : ''} width={g.w} height={g.h} loading={copy === 0 ? 'eager' : 'lazy'} draggable="false" />
-                  <figcaption>{label[f]}</figcaption>
-                </figure>
-              );
-            })}
+            {col.items.map((p, i) => (
+              <figure class="print">
+                <img src={p.src} alt={copy === 0 ? p.title : ''} width="1000" height="1000" loading={copy === 0 && i < 2 ? 'eager' : 'lazy'} draggable="false" />
+                <figcaption>{p.title}</figcaption>
+              </figure>
+            ))}
           </div>
         ))}
       </div>
     </div>
   ))}
 </div>
+<style>
+  .print img { aspect-ratio:1; object-fit:contain; }
+</style>
