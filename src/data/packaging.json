@@ -96,8 +96,7 @@
     "mergedFrom": [
       "mono-carton-packaging-box",
       "printed-mono-carton",
-      "mono-carton-box",
-      "mano-cartoon-box-manufacture-in-bangalore"
+      "mono-carton-box"
     ]
   },
   {
@@ -227,7 +226,6 @@
       "cardboard-printed-box-3d.webp"
     ],
     "mergedFrom": [
-      "mono-carton-boxes-manufacturers-in-bengaluru",
       "mono-cartons-corrugated-boxes"
     ]
   },
@@ -487,8 +485,8 @@
     ]
   },
   {
-    "id": "brownie-packaging-box-supplier-in-bengaluru",
-    "title": "Brownie Packaging Box Supplier In Bengaluru",
+    "id": "two-compartment-brownie-box",
+    "title": "Two-compartment brownie box",
     "category": "bakery",
     "group": "Brownie boxes",
     "size": "140X190X90 mm",
@@ -693,7 +691,7 @@
     ]
   },
   {
-    "id": "brownie-packaging-box-manufacture-in-bangalore",
+    "id": "brownie-box-options",
     "title": "Brownie packaging box",
     "category": "bakery",
     "group": "Brownie boxes",
@@ -1000,7 +998,7 @@
     ]
   },
   {
-    "id": "cupcake-packaging-box-manufacture-in-bangalore",
+    "id": "single-cupcake-box",
     "title": "Cupcake packaging box",
     "category": "bakery",
     "group": "Cupcake boxes",
